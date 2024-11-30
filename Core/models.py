@@ -1,6 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
+from cryptography.fernet import Fernet
+from django.conf import settings
+
+
+
 # Create your models here.
 class PasswordReset(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -17,8 +22,23 @@ class Product(models.Model):
     price = models.FloatField()
     quantity = models.IntegerField()
     supplier = models.CharField(max_length=100)
-    
+    bank_number = models.BinaryField()
     def __str__(self):
         return self.name
 
+    def set_bank_number(self, raw_number):
+        """Encrypt and set the bank number."""
+        fernet = Fernet(settings.FERNET_KEY)
+        self.bank_number = fernet.encrypt(raw_number.encode())
 
+    def get_bank_number(self):
+        """Decrypt and get the bank number."""
+        if self.bank_number:
+            fernet = Fernet(settings.FERNET_KEY)
+            return fernet.decrypt(self.bank_number).decode()
+        return None
+
+    def display_encrypted_bank_number(self):
+        """Display the encrypted bank number (hexadecimal or Base64 for readability)."""
+        if self.bank_number:
+            return self.bank_number.hex()  # Or use Base64 for cleaner output.

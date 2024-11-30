@@ -137,3 +137,5 @@ EMAIL_HOST_PASSWORD="hryhry"
 RECAPTCHA_PUBLIC_KEY = '6LcEro4qAAAAAHWY_x5OBA-7N8wAcwZ4VHix_NCp'
 RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
 # settings.py for django-simple-captcha
+# settings.py
+FERNET_KEY = b'CztzOGIFnVi1ZXE1b_BopTnyc2K5jmfd9prpPHwpYMc='  # Replace with your actual key

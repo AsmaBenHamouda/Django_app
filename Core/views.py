@@ -203,14 +203,14 @@ def ResetPassword(request, reset_id):
     return render(request, 'reset_password.html')
 # Create View
 def product_create_view(request):
-    form = ProductForm()
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ProductForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('product_list')
-    return render(request, 'invapp/product_form.html', {'form':form})
-
+            form.save()  # Save the instance to the database
+            return redirect('product_list')  # Redirect to the product list view
+    else:
+        form = ProductForm()
+    return render(request, "invapp/product_form.html", {"form": form})
 # Read View
 def product_list_view(request):
     products = Product.objects.all()
@@ -220,13 +220,19 @@ def product_list_view(request):
 def product_update_view(request, product_id):
     product = Product.objects.get(product_id=product_id)
     form = ProductForm(instance=product)
+
     if request.method == "POST":
-        form = ProductForm(request.POST,instance=product)
+        form = ProductForm(request.POST, instance=product)
         if form.is_valid():
             form.save()
             return redirect('product_list')
-    return render(request, 'invapp/product_form.html', {'form':form})
 
+    # Decrypt bank_number if it exists for display in the form
+    if product.bank_number:
+        decrypted_bank_number = product.decrypt_bank_number()
+        form.fields['bank_number'].initial = decrypted_bank_number
+
+    return render(request, 'invapp/product_form.html', {'form': form})
 # Delete View
 def product_delete_view(request, product_id):
     product = Product.objects.get(product_id = product_id)
