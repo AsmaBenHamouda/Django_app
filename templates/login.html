@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div class="center">
@@ -35,6 +36,9 @@
           <span></span>
           <label>Password</label>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LcEro4qAAAAAHWY_x5OBA-7N8wAcwZ4VHix_NCp">
+          
+        </div>
 
         <input type="submit" value="Login">
         <div class="signup_link">
@@ -42,6 +46,7 @@
           <p>Forgot your Password? <a href="/">Reset Password</a></p> 
         </div>
       </form>
+      
     </div>
 
   </body>

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Core',
+    'captcha',
 ]
 
 
@@ -132,4 +133,8 @@ EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT=465
 EMAIL_USE_SSL=True
 EMAIL_HOST_USER="asmabenhamouda08@gmail.com"
-EMAIL_HOST_PASSWORD="Waterair2025*"
+EMAIL_HOST_PASSWORD="hryhry"
+RECAPTCHA_PUBLIC_KEY = '6LcEro4qAAAAAHWY_x5OBA-7N8wAcwZ4VHix_NCp'
+RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
+# settings.py for django-simple-captcha
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_characters'  # Default setting for simple-captcha

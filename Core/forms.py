@@ -1,7 +1,9 @@
 from django import forms
 from .models import Product
+from captcha.fields import CaptchaField
 
 class ProductForm(forms.ModelForm):
+    captcha = CaptchaField(label='Security Controle')
     class Meta:
         model = Product
         fields = '__all__'

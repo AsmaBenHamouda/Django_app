@@ -10,7 +10,7 @@ from django.urls import reverse
 from .models import *
 from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
-
+import requests
 from .forms import ProductForm
 from .models import Product
 
@@ -71,28 +71,39 @@ def RegisterView(request):
     return render(request, 'register.html')
 
 def LoginView(request):
-
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
+        recaptcha_response = request.POST.get('g-recaptcha-response')  # Get the reCAPTCHA response
 
-        user = authenticate(request, username=username, password=password)
+        # Verify reCAPTCHA with Google
+        recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'
+        recaptcha_secret_key = settings.RECAPTCHA_PRIVATE_KEY  # Add the secret key from settings.py
 
-        if user is not None:
-            login(request, user)
+        data = {
+            'secret': recaptcha_secret_key,
+            'response': recaptcha_response
+        }
+        recaptcha_result = requests.post(recaptcha_url, data=data)
+        result_json = recaptcha_result.json()
 
-            return redirect('home')
-        
+        # Check if reCAPTCHA was successfully verified
+        if result_json.get('success'):
+            # Authenticate user if reCAPTCHA is valid
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('home')
+            else:
+                messages.error(request, "Invalid login credentials")
+                return redirect('login')
         else:
-            messages.error(request, "Invalid login credentials")
+            messages.error(request, "reCAPTCHA verification failed. Please try again.")
             return redirect('login')
 
     return render(request, 'login.html')
 
-    
 
-
-    return render(request, 'login.html')
 def LogoutView(request):
 
     logout(request)
