@@ -137,4 +137,3 @@ EMAIL_HOST_PASSWORD="hryhry"
 RECAPTCHA_PUBLIC_KEY = '6LcEro4qAAAAAHWY_x5OBA-7N8wAcwZ4VHix_NCp'
 RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
 # settings.py for django-simple-captcha
-CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_characters'  # Default setting for simple-captcha
