@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import json
+import logging
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -139,3 +141,60 @@ RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
 # settings.py for django-simple-captcha
 # settings.py
 FERNET_KEY = b'CztzOGIFnVi1ZXE1b_BopTnyc2K5jmfd9prpPHwpYMc='  # Replace with your actual key
+
+
+import os
+
+# Custom JSON Formatter
+class JSONFormatter(logging.Formatter):
+    def format(self, record):
+        log_obj = {
+            "timestamp": self.formatTime(record, self.datefmt),
+            "level": record.levelname,
+            "message": record.getMessage(),
+            "module": record.module,
+        }
+        return json.dumps(log_obj)
+# LOGGING Configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'json': {  # JSON formatter for structured logs
+            '()': JSONFormatter,  # Use custom JSONFormatter
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'json',  # Use custom JSON formatter
+        },
+        'file': {  # Save logs to a file
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'actions.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'Core': {  # Replace 'myapp' with your app name
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
+    
