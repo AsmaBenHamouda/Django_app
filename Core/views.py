@@ -238,8 +238,9 @@ def product_create_view(request):
     if request.method == "POST":
         form = ProductForm(request.POST)
         if form.is_valid():
-            form.save()  # Save the instance to the database
+            form.save()
             logger.info("Product created successfully.")
+    
             return redirect('product_list')  # Redirect to the product list view
         else:
             logger.warning("Invalid form data for product creation.")
@@ -249,9 +250,17 @@ def product_create_view(request):
 # Read View
 def product_list_view(request):
     logger.info("Accessed product list view.")
-    products = Product.objects.all()
-    return render(request, 'invapp/product_list.html', {'products':products})
+    can_view_all_products = request.user.has_perm('Core.can_view_all_products')
+    if can_view_all_products:
+        products = Product.objects.all()
+    else:
+        products = Product.objects.filter(created_by=request.user)
 
+    # Pass the permission and products to the template
+    return render(request, 'invapp/product_list.html', {
+        'products': products,
+        'can_view_all_products': can_view_all_products
+    })
 # Update View
 def product_update_view(request, product_id):
     if not request.user.has_perm('Core.can_update_product'):

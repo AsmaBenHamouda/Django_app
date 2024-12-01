@@ -23,12 +23,15 @@ class Product(models.Model):
     quantity = models.IntegerField()
     supplier = models.CharField(max_length=100)
     bank_number = models.BinaryField()
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, related_name="products")
     class Meta:
         permissions = [
             ("can_create_product", "Can create product"),
             ("can_update_product", "Can update product"),
             ("can_delete_product", "Can delete product"),
-            ('can_view_product', 'Can view product')
+            ('can_view_product', 'Can view product'),
+            ("can_view_own_products", "Can view own products"),
+            ("can_view_all_products", "Can view all products"),
         ]
     def __str__(self):
         return self.name

@@ -4,7 +4,14 @@
 {% block title %} Product List {% endblock %}
 
 {% block content %}
-    <h1 class="text-center">Products</h1>
+    <!-- Display heading based on user permissions -->
+    {% if can_view_all_products %}
+        <h1 class="text-center">All Products</h1>
+    {% else %}
+        <h1 class="text-center">Your Products</h1>
+    {% endif %}
+
+    <!-- Display the table -->
     <table class="table table-bordered table-striped ">
         <thead class="thead-dark">
             <tr>
@@ -34,4 +41,8 @@
             {% endfor %}
         </tbody>
     </table>
+
+    {% if not products %}
+        <p class="text-center">No products available to display.</p>
+    {% endif %}
 {% endblock %}

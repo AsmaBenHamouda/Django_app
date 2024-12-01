@@ -351,3 +351,872 @@ INFO 2024-12-01 12:32:25,149 basehttp "GET /create/ HTTP/1.1" 200 601
 INFO 2024-12-01 12:32:41,060 basehttp "GET / HTTP/1.1" 302 0
 INFO 2024-12-01 12:32:41,083 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
 INFO 2024-12-01 12:32:41,139 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-01 19:34:01,561 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 19:34:07,415 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-01 19:34:07,440 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-01 19:34:07,497 basehttp "GET /static/style.css HTTP/1.1" 304 0
+WARNING 2024-12-01 19:34:09,146 log Not Found: /favicon.ico
+WARNING 2024-12-01 19:34:09,148 basehttp "GET /favicon.ico HTTP/1.1" 404 5348
+INFO 2024-12-01 19:34:22,255 views User 'douda' successfully logged in.
+INFO 2024-12-01 19:34:22,266 basehttp "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:34:22,277 views User 'douda' accessed the home page.
+INFO 2024-12-01 19:34:22,280 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 19:34:25,278 views Accessed product creation view.
+INFO 2024-12-01 19:34:25,370 basehttp "GET /create/ HTTP/1.1" 200 4240
+INFO 2024-12-01 19:34:25,499 basehttp "GET /captcha/image/7968379e29deb28ba4d2ad64e62f818e4364f6e8/ HTTP/1.1" 200 3953
+INFO 2024-12-01 19:34:29,041 views Accessed product list view.
+INFO 2024-12-01 19:34:29,054 basehttp "GET /list/ HTTP/1.1" 200 2822
+INFO 2024-12-01 19:34:33,825 views Accessed product creation view.
+INFO 2024-12-01 19:34:33,842 basehttp "GET /create/ HTTP/1.1" 200 4240
+INFO 2024-12-01 19:34:33,875 basehttp "GET /captcha/image/422d7aa213fb874063dc05b5ca1b646ab68519be/ HTTP/1.1" 200 4291
+INFO 2024-12-01 19:35:03,822 views Accessed product creation view.
+INFO 2024-12-01 19:35:03,957 views Product created successfully.
+INFO 2024-12-01 19:35:03,962 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:35:03,974 views Accessed product list view.
+INFO 2024-12-01 19:35:04,014 basehttp "GET /list/ HTTP/1.1" 200 3254
+INFO 2024-12-01 19:35:06,563 views Accessed product update view for product_id: 1.
+INFO 2024-12-01 19:35:06,585 basehttp "GET /update/1/ HTTP/1.1" 200 4309
+INFO 2024-12-01 19:35:06,654 basehttp "GET /captcha/image/bfd831baf84328a0c0371ec2ecd62c8885c49c88/ HTTP/1.1" 200 3810
+INFO 2024-12-01 19:35:17,062 views Accessed product update view for product_id: 1.
+INFO 2024-12-01 19:35:17,139 views Product with product_id: 1 updated successfully.
+INFO 2024-12-01 19:35:17,141 basehttp "POST /update/1/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:35:17,150 views Accessed product list view.
+INFO 2024-12-01 19:35:17,164 basehttp "GET /list/ HTTP/1.1" 200 3254
+INFO 2024-12-01 19:35:24,277 basehttp "GET /delete/1/ HTTP/1.1" 200 601
+INFO 2024-12-01 19:35:31,761 views User 'douda' accessed the home page.
+INFO 2024-12-01 19:35:31,763 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 19:35:40,271 views User 'douda' accessed the home page.
+INFO 2024-12-01 19:35:40,275 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 19:35:51,094 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:35:51,132 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3674
+INFO 2024-12-01 19:36:06,352 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:36:06,388 basehttp "GET /admin/ HTTP/1.1" 200 10441
+INFO 2024-12-01 19:36:08,825 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15464
+INFO 2024-12-01 19:36:09,229 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:36:13,089 basehttp "GET /admin/auth/user/5/change/ HTTP/1.1" 200 23689
+INFO 2024-12-01 19:36:13,121 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:36:22,231 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 10706
+INFO 2024-12-01 19:36:22,269 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:36:24,155 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13689
+INFO 2024-12-01 19:36:24,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:36:52,282 basehttp "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:36:52,340 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 10907
+INFO 2024-12-01 19:36:52,373 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:37:02,025 views User 'admin' accessed the home page.
+INFO 2024-12-01 19:37:02,029 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 19:37:04,510 views Accessed product list view.
+INFO 2024-12-01 19:37:04,513 basehttp "GET /list/ HTTP/1.1" 200 3254
+INFO 2024-12-01 19:37:05,984 views Accessed product delete view for product_id: 1.
+INFO 2024-12-01 19:37:05,995 basehttp "GET /delete/1/ HTTP/1.1" 200 2736
+INFO 2024-12-01 19:37:08,561 views Accessed product delete view for product_id: 1.
+INFO 2024-12-01 19:37:08,616 views Product with product_id: 1 deleted successfully.
+INFO 2024-12-01 19:37:08,619 basehttp "POST /delete/1/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:37:08,628 views Accessed product list view.
+INFO 2024-12-01 19:37:08,638 basehttp "GET /list/ HTTP/1.1" 200 2822
+INFO 2024-12-01 19:37:15,166 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 8236
+INFO 2024-12-01 19:37:15,189 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:37:18,378 views Accessed product creation view.
+INFO 2024-12-01 19:37:18,460 basehttp "GET /create/ HTTP/1.1" 200 4240
+INFO 2024-12-01 19:37:18,533 basehttp "GET /captcha/image/42ca8d5788599cb8e0b39d2b969d98a9c33644f1/ HTTP/1.1" 200 3912
+INFO 2024-12-01 19:37:54,187 views Accessed product creation view.
+WARNING 2024-12-01 19:37:54,191 views Invalid form data for product creation.
+INFO 2024-12-01 19:37:54,209 basehttp "POST /create/ HTTP/1.1" 200 4404
+INFO 2024-12-01 19:37:54,243 basehttp "GET /captcha/image/9306e0a5e119a30e6c71b6e68fa163c4612852a9/ HTTP/1.1" 200 3594
+INFO 2024-12-01 19:38:01,667 views Accessed product creation view.
+INFO 2024-12-01 19:38:01,738 views Product created successfully.
+INFO 2024-12-01 19:38:01,740 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:38:01,744 views Accessed product list view.
+INFO 2024-12-01 19:38:01,749 basehttp "GET /list/ HTTP/1.1" 200 3260
+INFO 2024-12-01 19:38:06,116 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 10426
+INFO 2024-12-01 19:38:06,143 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:38:15,314 views Accessed product update view for product_id: 2.
+INFO 2024-12-01 19:38:15,390 basehttp "GET /update/2/ HTTP/1.1" 200 4315
+INFO 2024-12-01 19:38:15,423 basehttp "GET /captcha/image/6da466b8e419b878e21835c1792cad9950c1453e/ HTTP/1.1" 200 3875
+INFO 2024-12-01 19:38:29,572 views Accessed product update view for product_id: 2.
+INFO 2024-12-01 19:38:29,639 views Product with product_id: 2 updated successfully.
+INFO 2024-12-01 19:38:29,640 basehttp "POST /update/2/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:38:29,645 views Accessed product list view.
+INFO 2024-12-01 19:38:29,650 basehttp "GET /list/ HTTP/1.1" 200 3260
+INFO 2024-12-01 19:38:33,065 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 10625
+INFO 2024-12-01 19:38:33,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:38:33,290 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 10625
+INFO 2024-12-01 19:38:33,336 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 19:39:43,808 views Accessed product creation view.
+INFO 2024-12-01 19:39:43,830 basehttp "GET /create/ HTTP/1.1" 200 4240
+INFO 2024-12-01 19:39:43,879 basehttp "GET /captcha/image/26ee820d539f69e51923985fa459094abba6213b/ HTTP/1.1" 200 4359
+INFO 2024-12-01 19:40:06,255 views Accessed product creation view.
+INFO 2024-12-01 19:40:06,325 views Product created successfully.
+INFO 2024-12-01 19:40:06,328 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-01 19:40:06,334 views Accessed product list view.
+INFO 2024-12-01 19:40:06,342 basehttp "GET /list/ HTTP/1.1" 200 3693
+INFO 2024-12-01 19:53:10,930 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-01 19:53:12,068 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:03:04,112 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:03:06,583 views User 'admin' accessed the home page.
+INFO 2024-12-01 20:03:06,599 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:03:12,341 basehttp "GET /admin/ HTTP/1.1" 200 10791
+INFO 2024-12-01 20:03:58,815 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 10706
+INFO 2024-12-01 20:03:58,853 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:04:09,434 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 13557
+INFO 2024-12-01 20:04:09,479 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:04:15,431 basehttp "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:04:15,456 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11164
+INFO 2024-12-01 20:04:15,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:04:19,495 basehttp "GET /admin/auth/group/5/change/ HTTP/1.1" 200 13781
+INFO 2024-12-01 20:04:19,529 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:04:39,826 basehttp "POST /admin/auth/group/5/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:04:39,848 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11166
+INFO 2024-12-01 20:04:39,878 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:04:50,579 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 13557
+INFO 2024-12-01 20:04:50,614 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:05:02,551 basehttp "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:05:02,590 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11441
+INFO 2024-12-01 20:05:02,617 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:05:05,493 basehttp "GET /admin/auth/group/6/change/ HTTP/1.1" 200 13801
+INFO 2024-12-01 20:05:05,516 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:05:27,117 basehttp "POST /admin/auth/group/6/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:05:27,177 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11443
+INFO 2024-12-01 20:05:27,216 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:10:51,117 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:10:53,645 views User 'admin' accessed the home page.
+INFO 2024-12-01 20:10:53,665 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:11:18,799 views User 'admin' logged out.
+INFO 2024-12-01 20:11:18,812 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:11:18,828 basehttp "GET /login/ HTTP/1.1" 200 1196
+WARNING 2024-12-01 20:11:30,410 views Login failed: Invalid credentials for username 'moh123'.
+INFO 2024-12-01 20:11:30,413 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:11:30,419 basehttp "GET /login/ HTTP/1.1" 200 1351
+INFO 2024-12-01 20:11:45,438 views User 'moh123' successfully logged in.
+INFO 2024-12-01 20:11:45,452 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:11:45,467 views User 'moh123' accessed the home page.
+INFO 2024-12-01 20:11:45,470 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:11:47,990 basehttp "GET /create/ HTTP/1.1" 200 601
+INFO 2024-12-01 20:11:49,828 views User 'moh123' accessed the home page.
+INFO 2024-12-01 20:11:49,833 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:12:01,639 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:12:01,688 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3675
+INFO 2024-12-01 20:12:09,263 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:12:09,286 basehttp "GET /admin/ HTTP/1.1" 200 10776
+INFO 2024-12-01 20:12:12,152 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15599
+INFO 2024-12-01 20:12:12,182 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:12:14,178 basehttp "GET /admin/auth/user/7/change/ HTTP/1.1" 200 23918
+INFO 2024-12-01 20:12:14,202 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:12:28,125 views Accessed product list view.
+ERROR 2024-12-01 20:12:28,330 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 257, in product_list_view
+    return render(request, 'invapp/product_list.html', {'products':products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:12:28,338 basehttp "GET /list/ HTTP/1.1" 500 229815
+INFO 2024-12-01 20:16:18,969 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-01 20:16:20,081 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:16:23,232 views Accessed product list view.
+ERROR 2024-12-01 20:16:23,315 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:16:23,325 basehttp "GET /list/ HTTP/1.1" 500 230004
+INFO 2024-12-01 20:16:25,919 views Accessed product list view.
+ERROR 2024-12-01 20:16:25,967 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:16:25,971 basehttp "GET /list/ HTTP/1.1" 500 230004
+INFO 2024-12-01 20:16:27,205 views User 'admin' accessed the home page.
+INFO 2024-12-01 20:16:27,221 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:16:31,481 views Accessed product list view.
+ERROR 2024-12-01 20:16:31,560 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:16:31,566 basehttp "GET /list/ HTTP/1.1" 500 229867
+INFO 2024-12-01 20:16:36,582 views Accessed product creation view.
+INFO 2024-12-01 20:16:36,663 basehttp "GET /create/ HTTP/1.1" 200 4675
+INFO 2024-12-01 20:16:36,788 basehttp "GET /captcha/image/08141af14cc91d8a1ab9d0f2ecef4315f1a6aebd/ HTTP/1.1" 200 4306
+INFO 2024-12-01 20:16:39,490 views Accessed product list view.
+ERROR 2024-12-01 20:16:39,621 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:16:39,630 basehttp "GET /list/ HTTP/1.1" 500 229867
+INFO 2024-12-01 20:16:41,937 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-01 20:16:42,759 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:16:46,794 views Accessed product list view.
+ERROR 2024-12-01 20:16:46,919 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:16:46,928 basehttp "GET /list/ HTTP/1.1" 500 230004
+INFO 2024-12-01 20:16:58,410 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:16:59,478 views User 'admin' accessed the home page.
+INFO 2024-12-01 20:16:59,520 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:17:02,063 views User 'admin' accessed the home page.
+INFO 2024-12-01 20:17:02,068 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:17:08,705 views Accessed product list view.
+ERROR 2024-12-01 20:17:08,818 log Internal Server Error: /list/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.has_perm('Core.can_view_all_products')"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 260, in product_list_view
+    return render(request, 'invapp/product_list.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('Core.can_view_all_products')' from 'user.has_perm('Core.can_view_all_products')'
+ERROR 2024-12-01 20:17:08,835 basehttp "GET /list/ HTTP/1.1" 500 229867
+INFO 2024-12-01 20:18:02,872 views Accessed product list view.
+INFO 2024-12-01 20:18:02,921 basehttp "GET /list/ HTTP/1.1" 200 3804
+INFO 2024-12-01 20:18:21,661 views Accessed product list view.
+INFO 2024-12-01 20:18:21,668 basehttp "GET /list/ HTTP/1.1" 200 3804
+INFO 2024-12-01 20:18:34,002 basehttp "POST /admin/auth/user/7/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:18:34,090 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15793
+INFO 2024-12-01 20:18:34,126 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:18:36,222 views Accessed product list view.
+INFO 2024-12-01 20:18:36,237 basehttp "GET /list/ HTTP/1.1" 200 3804
+INFO 2024-12-01 20:18:37,983 views Accessed product list view.
+INFO 2024-12-01 20:18:37,998 basehttp "GET /list/ HTTP/1.1" 200 3804
+INFO 2024-12-01 20:18:39,016 views Accessed product list view.
+INFO 2024-12-01 20:18:39,022 basehttp "GET /list/ HTTP/1.1" 200 3804
+INFO 2024-12-01 20:18:41,504 views Accessed product creation view.
+INFO 2024-12-01 20:18:41,614 basehttp "GET /create/ HTTP/1.1" 200 4675
+INFO 2024-12-01 20:18:41,683 basehttp "GET /captcha/image/3d9a4fef30cdce0496dc4975d1a0f24c04a859bf/ HTTP/1.1" 200 3892
+INFO 2024-12-01 20:19:07,110 views Accessed product creation view.
+WARNING 2024-12-01 20:19:07,161 views Invalid form data for product creation.
+INFO 2024-12-01 20:19:07,212 basehttp "POST /create/ HTTP/1.1" 200 4833
+INFO 2024-12-01 20:19:07,262 basehttp "GET /captcha/image/e3820c6c810d2576720614a8566c0ca0c56c576f/ HTTP/1.1" 200 4011
+INFO 2024-12-01 20:19:26,350 views Accessed product creation view.
+WARNING 2024-12-01 20:19:26,355 views Invalid form data for product creation.
+INFO 2024-12-01 20:19:26,387 basehttp "POST /create/ HTTP/1.1" 200 4835
+INFO 2024-12-01 20:19:26,422 basehttp "GET /captcha/image/ebe7adf70413672f26484bbf5532668e046d1526/ HTTP/1.1" 200 3880
+INFO 2024-12-01 20:20:08,586 views Accessed product creation view.
+INFO 2024-12-01 20:20:08,658 views Product created successfully.
+INFO 2024-12-01 20:20:08,660 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:20:08,664 views Accessed product list view.
+INFO 2024-12-01 20:20:08,672 basehttp "GET /list/ HTTP/1.1" 200 4238
+INFO 2024-12-01 20:20:16,448 views Accessed product list view.
+INFO 2024-12-01 20:20:16,452 basehttp "GET /list/ HTTP/1.1" 200 4238
+INFO 2024-12-01 20:20:19,232 views User 'admin' logged out.
+INFO 2024-12-01 20:20:19,296 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:20:19,310 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-01 20:20:19,374 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-01 20:20:27,937 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 20:20:32,030 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-01 20:20:32,044 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-01 20:20:46,713 views User 'moh123' successfully logged in.
+INFO 2024-12-01 20:20:46,726 basehttp "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:20:46,736 views User 'moh123' accessed the home page.
+INFO 2024-12-01 20:20:46,739 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:20:49,039 views Accessed product list view.
+INFO 2024-12-01 20:20:49,086 basehttp "GET /list/ HTTP/1.1" 200 3368
+INFO 2024-12-01 20:21:03,024 basehttp "GET /admin/auth/user/7/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:21:03,074 basehttp "GET /admin/login/?next=/admin/auth/user/7/change/ HTTP/1.1" 200 3713
+INFO 2024-12-01 20:21:10,113 basehttp "POST /admin/login/?next=/admin/auth/user/7/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:21:10,216 basehttp "GET /admin/auth/user/7/change/ HTTP/1.1" 200 23927
+INFO 2024-12-01 20:21:10,252 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 20:22:12,297 basehttp "POST /admin/auth/user/7/change/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:22:12,340 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15793
+INFO 2024-12-01 20:22:12,375 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-01 20:22:33,757 log Forbidden (CSRF token from POST incorrect.): /login/
+WARNING 2024-12-01 20:22:33,759 basehttp "POST /login/ HTTP/1.1" 403 2503
+INFO 2024-12-01 20:22:43,697 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-01 20:22:54,748 views User 'moh123' successfully logged in.
+INFO 2024-12-01 20:22:54,764 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-01 20:22:54,774 views User 'moh123' accessed the home page.
+INFO 2024-12-01 20:22:54,776 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 20:22:57,216 views Accessed product list view.
+INFO 2024-12-01 20:22:57,231 basehttp "GET /list/ HTTP/1.1" 200 4238
