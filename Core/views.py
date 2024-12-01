@@ -26,6 +26,8 @@ logger = logging.getLogger('Core')
 def home_view(request):
     logger.info(f"User '{request.user.username}' accessed the home page.")
     return render(request, 'invapp/home.html')
+def access_denied(request):
+    return render(request, 'access_denied.html')
 def RegisterView(request):
 
     if request.method == "POST":
@@ -230,7 +232,8 @@ def ResetPassword(request, reset_id):
 # Create View
 def product_create_view(request):
     if not request.user.has_perm('Core.can_create_product'):
-        raise PermissionDenied("You do not have permission to create products.")
+        return access_denied(request)
+    
     logger.info("Accessed product creation view.")
     if request.method == "POST":
         form = ProductForm(request.POST)
@@ -252,7 +255,7 @@ def product_list_view(request):
 # Update View
 def product_update_view(request, product_id):
     if not request.user.has_perm('Core.can_update_product'):
-        raise PermissionDenied("You do not have permission to update products.")
+        return access_denied(request)
     logger.info(f"Accessed product update view for product_id: {product_id}.")
     product = Product.objects.get(product_id=product_id)
     form = ProductForm(instance=product)
@@ -277,7 +280,7 @@ def product_update_view(request, product_id):
 # Delete View
 def product_delete_view(request, product_id):
     if not request.user.has_perm('myapp.can_delete_product'):
-        raise PermissionDenied("You do not have permission to delete products.")
+        return access_denied(request)
     logger.info(f"Accessed product delete view for product_id: {product_id}.")
     product = Product.objects.get(product_id = product_id)
     if request.method == 'POST':

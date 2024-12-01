@@ -114,3 +114,28 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
 }
+/* Button styling for access denied page */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8e44ad;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
