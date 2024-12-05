@@ -1,0 +1,30 @@
+<!-- Extend the base layout from the layout.html -->
+{% extends "invapp/layout.html" %}
+
+{% block title %} Product List {% endblock %}
+
+{% block content %}
+    <h1>Analyse des Logs</h1>
+
+    <!-- Formulaire pour filtrer les logs -->
+    <form method="get">
+        <label for="level">Niveau :</label>
+        <select name="level" id="level">
+            <option value="INFO" {% if level == 'INFO' %}selected{% endif %}>INFO</option>
+            <option value="WARNING" {% if level == 'WARNING' %}selected{% endif %}>WARNING</option>
+            <option value="ERROR" {% if level == 'ERROR' %}selected{% endif %}>ERROR</option>
+        </select>
+        <label for="minutes">Temps (en minutes) :</label>
+        <input type="number" name="minutes" id="minutes" value="{{ minutes }}" min="1">
+        <button type="submit">Filtrer</button>
+    </form>
+
+    <!-- Affichage des logs filtrés -->
+    <ul>
+        {% for log in logs %}
+            <li>{{ log }}</li>
+        {% empty %}
+            <li>Aucun log trouvé pour les critères sélectionnés.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,25 @@
+<!-- Extend the base layout from the layout.html -->
+{% extends "invapp/layout.html" %}
+
+{% block title %} Admin Logs {% endblock %}
+{% block content %}
+    <h1>Admin Logs Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Log Entry</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td>{{ log }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td>No important logs found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

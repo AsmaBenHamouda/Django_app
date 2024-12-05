@@ -15,11 +15,137 @@ from .forms import ProductForm
 from .models import Product
 import logging
 import logging
+from django.contrib.auth.decorators import user_passes_test
 from django.core.exceptions import PermissionDenied
+from .utils import parse_logs
+
+
+from django.core.mail import send_mail
+from django.conf import settings
+from django.shortcuts import render, redirect
+from django.contrib.sites.shortcuts import get_current_site
+from django.template.loader import render_to_string
+from django.contrib.auth.models import User
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.contrib.auth.tokens import default_token_generator
+from django.contrib.auth import get_user_model
+import requests
+from django.utils.encoding import force_bytes
+
+from datetime import datetime, timedelta
+from django.contrib.admin.views.decorators import staff_member_required
+from django.shortcuts import render
+
+@staff_member_required  # Limite l'accès aux administrateurs
+def logs_view_admin(request):
+    log_file_path = 'actions.log'  # Chemin du fichier de logs
+    logs = []
+
+    # Lecture des logs
+    try:
+        with open(log_file_path, 'r') as file:
+            for line in file:
+                logs.append(line.strip())
+    except FileNotFoundError:
+        logs = ["Le fichier actions.log n'existe pas."]
+
+    # Récupération des filtres (paramètres GET)
+    level = request.GET.get('level', 'INFO')  # Par défaut, niveau INFO
+    minutes = int(request.GET.get('minutes', 60))  # Période par défaut : 60 minutes
+
+    # Filtrage des logs
+    filtered_logs = []
+    now = datetime.now()
+    time_threshold = now - timedelta(minutes=minutes)
+
+    for log in logs:
+        try:
+            # Extraction des informations du log (date, niveau, message)
+            parts = log.split(' ', 3)  # Extrait niveau, timestamp, et message
+            log_level = parts[0]
+            timestamp = parts[1] + " " + parts[2]
+            log_time = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S,%f')
+
+            if log_level == level and log_time >= time_threshold:
+                filtered_logs.append(log)
+        except (ValueError, IndexError):
+            continue  # Ignore les lignes mal formatées
+
+    # Envoi des données au template
+    context = {
+        'logs': filtered_logs,
+        'level': level,
+        'minutes': minutes,
+    }
+    return render(request, 'logs_view.html', context)
+
 
 
 logger = logging.getLogger('Core')
+def check_email_view(request):
+    return render(request, 'check_email.html')
+def activate_user(request, uid, token):
+    try:
+        uid = urlsafe_base64_decode(uid).decode()
+        user = get_user_model().objects.get(pk=uid)
+    except (TypeError, ValueError, OverflowError, get_user_model().DoesNotExist):
+        user = None
 
+    if user is not None and default_token_generator.check_token(user, token):
+        user.is_active = True  # Set user as active
+        user.save()
+        return redirect('login')  # Redirect to login page or a success page
+    else:
+        return render(request, 'activation_failed.html')  # Activation failed page
+def send_confirmation_email(user, request):
+    """
+    Sends a confirmation email to the user after registration.
+    """
+    # Generate token for email confirmation
+    token = default_token_generator.make_token(user)
+    
+    # Encode the user ID to create the UID part of the URL
+    uid = urlsafe_base64_encode(force_bytes(user.pk))
+
+    # Get the domain for the email confirmation link
+    current_site = get_current_site(request)
+    
+    # Subject of the email
+    mail_subject = 'Activate Your Account'
+
+    html_message = render_to_string(
+        'activation_email.html',  # Template for email body
+        {
+            'user': user,
+            'domain': current_site.domain,
+            'uid': uid,
+            'token': token,
+        }
+    )
+
+    # Render the email body using a template
+    plain_message = f"Hello {user.first_name}!\n\nThank you for registering on our website. To complete your registration, please click the link below to activate your account:\n\nhttp://{current_site.domain}/activate/{uid}/{token}/\n\nIf you did not make this request, please ignore this email."
+
+    # Send the email
+    send_mail(
+        mail_subject,
+        plain_message,
+        settings.DEFAULT_FROM_EMAIL,  # From email address (e.g., 'webmaster@localhost')
+        [user.email],
+        html_message=html_message
+            # Recipient email address
+    )
+
+@login_required
+def admin_logs_view(request):
+    if not request.user.groups.filter(name='Admin Access').exists():
+        # If not in the group, redirect to access_denied page
+        messages.error(request, "You do not have permission to access this page.")
+        logger.info(f"User '{request.user.username}' Try to access to Logs Page  .")
+        return access_denied(request)
+    logs = parse_logs()  # Get filtered logs
+    logger.info(f"User '{request.user.username}'Accessed to Logs Page  .")
+    return render(request, 'admin_logs.html', {'logs': logs})
 
 
 @login_required
@@ -27,6 +153,7 @@ def home_view(request):
     logger.info(f"User '{request.user.username}' accessed the home page.")
     return render(request, 'invapp/home.html')
 def access_denied(request):
+    logger.info(f"User '{request.user.username}' accessed the to the denied page.")
     return render(request, 'access_denied.html')
 def RegisterView(request):
 
@@ -82,7 +209,8 @@ def RegisterView(request):
             )
             messages.success(request, "Account created. Login now")
             logger.info(f"New user registered: Username '{username}', Email '{email}'.")
-            return redirect('login')
+            send_confirmation_email(new_user, request)
+            return redirect('check_email')
 
     return render(request, 'register.html')
 
@@ -144,7 +272,8 @@ def ForgotPassword(request):
             full_password_reset_url = f'{request.scheme}://{request.get_host()}{password_reset_url}'
 
             email_body = f'Reset your password using the link below:\n\n\n{full_password_reset_url}'
-        
+            logger.info(f"User '{request.user.username}' try to reset his password.")
+
             email_message = EmailMessage(
                 'Reset your password', # email subject
                 email_body,
@@ -239,6 +368,9 @@ def product_create_view(request):
         form = ProductForm(request.POST)
         if form.is_valid():
             form.save()
+            product = form.save(commit=False)  # On ne sauvegarde pas encore
+            product.created_by = request.user  # Assigne l'utilisateur connecté
+            product.save()
             logger.info("Product created successfully.")
     
             return redirect('product_list')  # Redirect to the product list view
@@ -246,7 +378,10 @@ def product_create_view(request):
             logger.warning("Invalid form data for product creation.")
     else:
         form = ProductForm()
-    return render(request, "invapp/product_form.html", {"form": form})
+    return render(request, 'invapp/product_form.html', {
+        'form': form,
+        'username': request.user.username  # Passer le nom de l'utilisateur au template
+    })
 # Read View
 def product_list_view(request):
     logger.info("Accessed product list view.")

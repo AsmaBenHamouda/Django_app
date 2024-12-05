@@ -134,8 +134,12 @@ LOGIN_URL = '/login/'
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT=465
 EMAIL_USE_SSL=True
-EMAIL_HOST_USER="asmabenhamouda08@gmail.com"
-EMAIL_HOST_PASSWORD="hryhry"
+EMAIL_HOST_USER="mathlouthifarah1@gmail.com"
+EMAIL_HOST_PASSWORD="hekb etvw vkqk nclp"
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 RECAPTCHA_PUBLIC_KEY = '6LcEro4qAAAAAHWY_x5OBA-7N8wAcwZ4VHix_NCp'
 RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
 # settings.py for django-simple-captcha

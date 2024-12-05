@@ -16,6 +16,13 @@ class PasswordReset(models.Model):
         return f"Password reset for {self.user.username} at {self.created_when}"
 
 class Product(models.Model):
+    ENCRYPTION_CHOICES = [
+        ('fernet', 'Fernet'),
+        ('caesar', 'Caesar'),
+        ('aes192', 'AES 192'),
+        ('aes128', 'AES 128'),
+        ('aes256', 'AES 256'),
+    ]
     product_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     sku = models.CharField(max_length=50, unique = True)
@@ -23,7 +30,13 @@ class Product(models.Model):
     quantity = models.IntegerField()
     supplier = models.CharField(max_length=100)
     bank_number = models.BinaryField()
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, related_name="products")
+    created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    encryption_type = models.CharField(
+        max_length=10,
+        choices=ENCRYPTION_CHOICES,
+        default='fernet'
+    )
+    
     class Meta:
         permissions = [
             ("can_create_product", "Can create product"),

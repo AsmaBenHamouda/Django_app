@@ -1220,3 +1220,1385 @@ INFO 2024-12-01 20:22:54,774 views User 'moh123' accessed the home page.
 INFO 2024-12-01 20:22:54,776 basehttp "GET / HTTP/1.1" 200 2747
 INFO 2024-12-01 20:22:57,216 views Accessed product list view.
 INFO 2024-12-01 20:22:57,231 basehttp "GET /list/ HTTP/1.1" 200 4238
+INFO 2024-12-01 22:38:20,759 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 22:38:23,659 views User 'moh123' accessed the home page.
+INFO 2024-12-01 22:38:23,671 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-01 22:38:24,019 log Not Found: /favicon.ico
+WARNING 2024-12-01 22:38:24,019 basehttp "GET /favicon.ico HTTP/1.1" 404 5348
+INFO 2024-12-01 22:38:31,045 views User 'moh123' logged out.
+INFO 2024-12-01 22:38:31,101 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:38:31,108 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-01 22:38:31,132 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-01 22:38:38,791 autoreload Watching for file changes with StatReloader
+INFO 2024-12-01 22:38:40,953 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-01 22:38:40,962 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-01 22:40:09,580 basehttp "GET /register/ HTTP/1.1" 200 1764
+WARNING 2024-12-01 22:41:01,327 views Registration failed: Password validation failed for username 'Raw123'.
+INFO 2024-12-01 22:41:01,332 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:41:01,353 basehttp "GET /register/ HTTP/1.1" 200 2396
+INFO 2024-12-01 22:42:45,438 basehttp "GET /login/ HTTP/1.1" 200 1196
+WARNING 2024-12-01 22:43:24,268 views Login failed: Invalid credentials for username 'douda'.
+INFO 2024-12-01 22:43:24,271 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:43:24,274 basehttp "GET /login/ HTTP/1.1" 200 1351
+INFO 2024-12-01 22:43:34,672 views User 'douda' successfully logged in.
+INFO 2024-12-01 22:43:34,683 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:43:34,692 views User 'douda' accessed the home page.
+INFO 2024-12-01 22:43:34,695 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-01 22:43:56,835 views Accessed product creation view.
+INFO 2024-12-01 22:43:56,918 basehttp "GET /create/ HTTP/1.1" 200 4675
+INFO 2024-12-01 22:43:57,004 basehttp "GET /captcha/image/5f216733a6a70d3a094e476b55c6370ea8d8a617/ HTTP/1.1" 200 3679
+INFO 2024-12-01 22:44:41,293 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:44:41,325 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3674
+INFO 2024-12-01 22:44:48,300 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-01 22:44:48,333 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-01 22:44:52,275 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 13970
+INFO 2024-12-01 22:44:52,300 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 22:48:23,257 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11240
+INFO 2024-12-01 22:48:23,292 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 22:48:31,388 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13838
+INFO 2024-12-01 22:48:31,404 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-12-01 22:48:31,407 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-12-01 22:48:31,409 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 22:48:31,455 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-12-01 22:48:31,456 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-12-01 22:48:36,853 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15599
+INFO 2024-12-01 22:48:36,868 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-01 22:48:39,640 basehttp "GET /admin/auth/user/5/change/ HTTP/1.1" 200 23912
+INFO 2024-12-01 22:48:39,660 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-02 13:13:36,049 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 13:14:03,907 views User 'admin' accessed the home page.
+INFO 2024-12-02 13:14:03,929 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-02 13:14:04,534 log Not Found: /favicon.ico
+WARNING 2024-12-02 13:14:04,535 basehttp "GET /favicon.ico HTTP/1.1" 404 5348
+INFO 2024-12-02 13:14:09,655 views Accessed product list view.
+INFO 2024-12-02 13:14:09,686 basehttp "GET /list/ HTTP/1.1" 200 4238
+INFO 2024-12-02 13:14:13,135 views Accessed product creation view.
+INFO 2024-12-02 13:14:13,319 basehttp "GET /create/ HTTP/1.1" 200 4675
+INFO 2024-12-02 13:14:13,516 basehttp "GET /captcha/image/7d4e006cda42ecc7c8f8791c7cda28d0da9b84cf/ HTTP/1.1" 200 4051
+INFO 2024-12-02 13:14:18,690 views User 'admin' logged out.
+INFO 2024-12-02 13:14:18,705 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-02 13:14:18,721 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-02 13:14:18,758 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:31,852 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-02 13:14:31,979 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-02 13:14:32,003 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,004 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,005 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,455 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,456 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,456 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:14:32,472 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-02 13:15:22,702 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-02 13:15:22,747 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-02 13:15:22,775 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-02 13:15:22,867 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-02 13:15:22,868 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:37:08,911 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 21:37:16,097 views User 'admin' accessed the home page.
+INFO 2024-12-02 21:37:16,118 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-02 21:37:16,648 log Not Found: /favicon.ico
+WARNING 2024-12-02 21:37:16,649 basehttp "GET /favicon.ico HTTP/1.1" 404 5348
+INFO 2024-12-02 21:37:23,294 views User 'admin' logged out.
+INFO 2024-12-02 21:37:23,314 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-02 21:37:23,327 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-02 21:37:23,363 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-02 21:37:43,897 views User 'douda' successfully logged in.
+INFO 2024-12-02 21:37:43,909 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-02 21:37:43,920 views User 'douda' accessed the home page.
+INFO 2024-12-02 21:37:43,920 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-02 21:37:46,953 views Accessed product creation view.
+INFO 2024-12-02 21:37:47,086 basehttp "GET /create/ HTTP/1.1" 200 4675
+INFO 2024-12-02 21:37:47,242 basehttp "GET /captcha/image/3ce696e435cb8ac58acce6fac7de09812b22bf95/ HTTP/1.1" 200 3834
+INFO 2024-12-02 21:37:53,321 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-02 21:37:53,385 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3674
+INFO 2024-12-02 21:38:04,104 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-02 21:38:04,135 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-02 21:38:09,407 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15599
+INFO 2024-12-02 21:38:09,441 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,444 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,446 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,447 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,449 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,451 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,451 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,453 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,455 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,460 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,461 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,504 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-02 21:38:09,511 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,517 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,551 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,553 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:09,553 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-02 21:38:15,390 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11240
+INFO 2024-12-02 21:38:15,432 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-02 21:38:56,033 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 13970
+INFO 2024-12-02 21:38:56,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 15:57:18,546 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 15:57:22,072 views User 'admin' accessed the home page.
+INFO 2024-12-04 15:57:22,119 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-04 15:57:22,679 log Not Found: /favicon.ico
+WARNING 2024-12-04 15:57:22,680 basehttp "GET /favicon.ico HTTP/1.1" 404 5348
+INFO 2024-12-04 15:57:25,360 views User 'admin' logged out.
+INFO 2024-12-04 15:57:25,391 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:57:25,418 basehttp "GET /login/ HTTP/1.1" 200 1196
+INFO 2024-12-04 15:57:25,445 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-04 15:57:27,174 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-04 15:57:59,387 views New user registered: Username 'ASMA123', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-04 15:57:59,388 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:57:59,394 basehttp "GET /login/ HTTP/1.1" 200 1353
+INFO 2024-12-04 15:58:19,051 views User 'ASMA123' successfully logged in.
+INFO 2024-12-04 15:58:19,065 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:19,075 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 15:58:19,077 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 15:58:21,544 views User 'ASMA123' logged out.
+INFO 2024-12-04 15:58:21,559 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:21,567 basehttp "GET /login/ HTTP/1.1" 200 1196
+WARNING 2024-12-04 15:58:39,211 views Login failed: Invalid credentials for username 'ASMA123'.
+INFO 2024-12-04 15:58:39,212 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:39,221 basehttp "GET /login/ HTTP/1.1" 200 1351
+INFO 2024-12-04 15:58:42,657 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:42,678 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-04 15:58:48,212 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:48,230 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-04 15:58:49,892 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:49,898 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-04 15:58:52,909 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:58:52,930 basehttp "GET /login/?next=/ HTTP/1.1" 200 1196
+INFO 2024-12-04 15:59:39,088 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:59:39,126 basehttp "GET /login/?next=/ HTTP/1.1" 200 1203
+INFO 2024-12-04 15:59:41,622 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 15:59:41,631 basehttp "GET /login/?next=/ HTTP/1.1" 200 1203
+INFO 2024-12-04 16:00:52,802 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:00:55,219 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 16:00:55,256 basehttp "GET /login/?next=/ HTTP/1.1" 200 1212
+INFO 2024-12-04 16:00:57,884 basehttp "GET /forgot-password/ HTTP/1.1" 200 932
+INFO 2024-12-04 16:01:07,087 views Password reset email sent to 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-04 16:01:07,089 basehttp "POST /forgot-password/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:01:07,096 views Password reset attempt with reset_id: 4ea7d2fe-b774-48f1-832c-9e6e841e6765
+INFO 2024-12-04 16:01:07,137 basehttp "GET /password-reset-sent/4ea7d2fe-b774-48f1-832c-9e6e841e6765/ HTTP/1.1" 200 489
+INFO 2024-12-04 16:01:40,588 views Attempting password reset with reset_id: 4ea7d2fe-b774-48f1-832c-9e6e841e6765
+INFO 2024-12-04 16:01:40,595 views Found password reset entry for reset_id: 4ea7d2fe-b774-48f1-832c-9e6e841e6765
+INFO 2024-12-04 16:01:40,624 basehttp "GET /reset-password/4ea7d2fe-b774-48f1-832c-9e6e841e6765/ HTTP/1.1" 200 1045
+INFO 2024-12-04 16:03:05,167 views Attempting password reset with reset_id: 4ea7d2fe-b774-48f1-832c-9e6e841e6765
+INFO 2024-12-04 16:03:05,170 views Found password reset entry for reset_id: 4ea7d2fe-b774-48f1-832c-9e6e841e6765
+INFO 2024-12-04 16:03:06,003 views Password reset successfully. Redirecting to login.
+INFO 2024-12-04 16:03:06,004 basehttp "POST /reset-password/4ea7d2fe-b774-48f1-832c-9e6e841e6765/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:03:06,010 basehttp "GET /login/ HTTP/1.1" 200 1375
+INFO 2024-12-04 16:03:23,252 views User 'ASMA123' successfully logged in.
+INFO 2024-12-04 16:03:23,262 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:03:23,269 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 16:03:23,272 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 16:23:51,132 views Accessed product list view.
+INFO 2024-12-04 16:23:51,150 basehttp "GET /list/ HTTP/1.1" 200 3008
+INFO 2024-12-04 16:23:53,868 basehttp "GET /create/ HTTP/1.1" 200 601
+INFO 2024-12-04 16:23:56,401 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 16:23:56,403 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 16:23:57,830 basehttp "GET /create/ HTTP/1.1" 200 601
+INFO 2024-12-04 16:23:59,147 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 16:23:59,149 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 16:24:01,368 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 16:24:01,369 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 16:30:48,762 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-04 16:30:49,847 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:30:57,175 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-04 16:30:57,911 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:32:20,968 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 16:32:21,795 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:34:55,209 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 16:34:55,864 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:38:47,606 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:42:00,772 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 20:42:01,936 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:53:23,779 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 20:53:28,021 views User 'ASMA123' accessed the home page.
+INFO 2024-12-04 20:53:28,042 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-04 20:53:28,651 log Not Found: /favicon.ico
+WARNING 2024-12-04 20:53:28,652 basehttp "GET /favicon.ico HTTP/1.1" 404 5611
+INFO 2024-12-04 20:53:36,770 basehttp "GET /admin/logs/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:53:36,920 basehttp "GET /admin/login/?next=/admin/logs/ HTTP/1.1" 200 3686
+INFO 2024-12-04 20:53:36,961 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:36,963 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:36,964 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:36,965 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:36,966 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:36,967 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:37,022 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-04 20:53:45,789 basehttp "POST /admin/login/?next=/admin/logs/ HTTP/1.1" 302 0
+WARNING 2024-12-04 20:53:45,800 log Not Found: /admin/logs/
+WARNING 2024-12-04 20:53:45,801 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 20:54:48,140 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-04 20:54:49,446 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 20:54:51,374 log Not Found: /admin/logs/
+WARNING 2024-12-04 20:54:51,378 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+WARNING 2024-12-04 20:54:52,597 log Not Found: /admin/logs/
+WARNING 2024-12-04 20:54:52,599 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 20:54:53,675 basehttp "GET /admin/login/?next=/admin/logs/ HTTP/1.1" 302 0
+INFO 2024-12-04 20:54:53,844 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 20:54:56,499 views User 'admin' accessed the home page.
+INFO 2024-12-04 20:54:56,506 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 20:55:03,939 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 20:55:04,041 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-04 20:55:04,558 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-04 20:55:04,559 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2024-12-04 20:55:21,693 log Not Found: /admin/logs/
+WARNING 2024-12-04 20:55:21,696 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:06:41,590 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\urls.py changed, reloading.
+INFO 2024-12-04 21:06:42,545 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:07:03,526 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:07:06,877 views User 'admin' accessed the home page.
+INFO 2024-12-04 21:07:06,893 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-04 21:07:27,768 log Not Found: /core/logs/
+WARNING 2024-12-04 21:07:27,770 basehttp "GET /core/logs/ HTTP/1.1" 404 5602
+WARNING 2024-12-04 21:07:48,772 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:07:48,774 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:08:29,746 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 21:08:30,706 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-04 21:08:33,671 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:08:33,673 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:10:54,918 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-04 21:10:55,751 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:11:24,949 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:11:28,789 views User 'admin' accessed the home page.
+INFO 2024-12-04 21:11:28,808 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-04 21:11:41,203 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:11:41,205 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+WARNING 2024-12-04 21:11:41,594 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:11:41,595 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:11:48,245 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 21:11:55,806 views User 'admin' accessed the home page.
+INFO 2024-12-04 21:11:55,809 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 21:11:57,828 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 21:12:11,580 basehttp "GET /admin/ HTTP/1.1" 200 10777
+WARNING 2024-12-04 21:12:13,850 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:12:13,851 basehttp "GET //admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:15:29,524 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-04 21:15:30,580 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:17:25,767 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-04 21:17:26,698 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:18:21,155 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 21:18:22,168 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:21:31,325 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 21:21:32,545 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:22:10,380 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:22:13,609 views User 'admin' accessed the home page.
+INFO 2024-12-04 21:22:13,631 basehttp "GET / HTTP/1.1" 200 2747
+WARNING 2024-12-04 21:23:32,523 log Not Found: /admin/logs/
+WARNING 2024-12-04 21:23:32,525 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 21:23:55,905 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-04 21:23:56,801 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 21:24:05,405 basehttp "GET /logs/ HTTP/1.1" 200 11651
+WARNING 2024-12-04 23:09:42,701 log Not Found: /admin/logs/
+WARNING 2024-12-04 23:09:42,703 basehttp "GET //admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 23:09:45,569 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 23:11:07,820 views Accessed product list view.
+INFO 2024-12-04 23:11:07,830 basehttp "GET /list/ HTTP/1.1" 200 4238
+INFO 2024-12-04 23:11:09,525 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:11:09,531 basehttp "GET / HTTP/1.1" 200 2747
+INFO 2024-12-04 23:12:20,582 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:12:20,644 basehttp "GET / HTTP/1.1" 200 2915
+INFO 2024-12-04 23:12:56,091 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:12:56,145 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:13:01,106 basehttp "GET /logs/ HTTP/1.1" 200 11946
+INFO 2024-12-04 23:14:08,060 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:14:09,136 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 23:14:11,286 basehttp "GET /logs/ HTTP/1.1" 200 11946
+WARNING 2024-12-04 23:14:26,084 log Not Found: /admin/logs/
+WARNING 2024-12-04 23:14:26,085 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+WARNING 2024-12-04 23:14:27,106 log Not Found: /admin/logs/
+WARNING 2024-12-04 23:14:27,110 basehttp "GET /admin/logs/ HTTP/1.1" 404 5939
+INFO 2024-12-04 23:14:32,916 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 23:14:34,933 basehttp "GET /logs/ HTTP/1.1" 200 12534
+INFO 2024-12-04 23:14:42,797 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:14:42,808 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:17:26,161 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:17:26,163 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:17:29,304 basehttp "GET /logs/ HTTP/1.1" 200 14453
+INFO 2024-12-04 23:23:38,181 basehttp "GET /admin/ HTTP/1.1" 200 10777
+INFO 2024-12-04 23:23:41,000 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11240
+INFO 2024-12-04 23:23:41,075 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,077 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,082 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,083 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,083 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,084 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,084 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,091 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,092 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,101 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,132 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:23:41,153 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:23:41,183 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,811 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 13557
+INFO 2024-12-04 23:24:20,839 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,842 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,843 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,844 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,848 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:24:20,916 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,917 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:20,980 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:24:25,080 basehttp "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:24:25,121 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11710
+INFO 2024-12-04 23:24:25,159 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:24:25,234 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:25:52,483 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:25:53,323 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 23:25:56,615 log Internal Server Error: /logs/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 29, in admin_logs_view
+    return redirect('access_denied')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'access_denied' not found. 'access_denied' is not a valid view function or pattern name.
+ERROR 2024-12-04 23:25:56,618 basehttp "GET /logs/ HTTP/1.1" 500 95958
+INFO 2024-12-04 23:26:11,227 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:26:12,327 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-04 23:26:13,376 log Internal Server Error: /logs/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 29, in admin_logs_view
+    return redirect('access_denied')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'access_denied' not found. 'access_denied' is not a valid view function or pattern name.
+ERROR 2024-12-04 23:26:13,381 basehttp "GET /logs/ HTTP/1.1" 500 96243
+INFO 2024-12-04 23:26:25,072 basehttp "GET /admin/ HTTP/1.1" 200 11029
+INFO 2024-12-04 23:26:25,515 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:37,946 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-04 23:26:37,978 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:26:41,536 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16150
+INFO 2024-12-04 23:26:41,563 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:26:41,635 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:41,636 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:45,840 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 23906
+INFO 2024-12-04 23:26:45,888 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:45,889 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:45,894 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:26:46,067 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:46,068 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:46,068 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:26:46,069 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-12-04 23:27:04,983 basehttp "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:27:05,050 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16343
+INFO 2024-12-04 23:27:05,075 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:27:14,521 basehttp "GET /admin/ HTTP/1.1" 200 10779
+INFO 2024-12-04 23:27:30,239 basehttp "GET /admin/ HTTP/1.1" 200 10779
+INFO 2024-12-04 23:27:31,270 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:27:31,275 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:27:33,862 basehttp "GET /logs/ HTTP/1.1" 200 15035
+INFO 2024-12-04 23:27:37,633 views User 'admin' logged out.
+INFO 2024-12-04 23:27:37,647 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:27:37,659 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-04 23:27:52,496 views User 'douda' successfully logged in.
+INFO 2024-12-04 23:27:52,507 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:27:52,519 views User 'douda' accessed the home page.
+INFO 2024-12-04 23:27:52,520 basehttp "GET / HTTP/1.1" 200 2919
+ERROR 2024-12-04 23:27:55,607 log Internal Server Error: /logs/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 29, in admin_logs_view
+    return redirect('access_denied')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'access_denied' not found. 'access_denied' is not a valid view function or pattern name.
+ERROR 2024-12-04 23:27:55,610 basehttp "GET /logs/ HTTP/1.1" 500 95823
+INFO 2024-12-04 23:28:30,839 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:28:31,836 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 23:28:33,444 views User 'douda' accessed the to the denied page.
+INFO 2024-12-04 23:28:33,486 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-04 23:28:35,682 views User 'douda' accessed the home page.
+INFO 2024-12-04 23:28:35,692 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:29:43,565 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:29:44,471 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 23:30:07,803 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-04 23:30:08,814 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 23:30:13,060 views User 'douda' Try to access to Logs Page  .
+INFO 2024-12-04 23:30:13,060 views User 'douda' accessed the to the denied page.
+INFO 2024-12-04 23:30:13,074 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-04 23:30:15,159 views User 'douda' accessed the home page.
+INFO 2024-12-04 23:30:15,169 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:30:21,970 views User 'douda' accessed the home page.
+INFO 2024-12-04 23:30:21,973 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:30:25,925 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:30:25,971 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4021
+INFO 2024-12-04 23:30:41,726 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:30:41,750 basehttp "GET /admin/ HTTP/1.1" 200 10779
+INFO 2024-12-04 23:30:44,451 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-04 23:30:44,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-04 23:30:59,238 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:30:59,242 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:31:10,405 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:31:10,409 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:31:18,216 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:31:18,218 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:31:22,065 views User 'admin' logged out.
+INFO 2024-12-04 23:31:22,077 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:31:22,085 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-04 23:31:22,120 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-04 23:36:19,314 views User 'admin' successfully logged in.
+INFO 2024-12-04 23:36:19,325 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-04 23:36:19,335 views User 'admin' accessed the home page.
+INFO 2024-12-04 23:36:19,337 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-04 23:36:21,142 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:36:21,144 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:39:13,495 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:39:13,497 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:39:16,162 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:39:16,165 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:39:16,802 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:39:16,803 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-04 23:39:17,402 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-04 23:39:17,405 basehttp "GET /logs/ HTTP/1.1" 200 15326
+INFO 2024-12-05 00:19:41,820 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-05 00:19:42,971 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:30:22,016 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:30:42,811 views User 'admin' accessed the home page.
+INFO 2024-12-05 00:30:42,822 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 00:30:46,726 views User 'admin' logged out.
+INFO 2024-12-05 00:30:46,738 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:30:46,745 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 00:30:49,587 basehttp "GET /forgot-password/ HTTP/1.1" 200 932
+INFO 2024-12-05 00:30:52,359 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 00:31:20,711 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 00:31:26,629 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:31:26,661 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 00:31:33,232 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:31:33,252 basehttp "GET /admin/ HTTP/1.1" 200 10779
+INFO 2024-12-05 00:31:36,220 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16150
+INFO 2024-12-05 00:31:36,246 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:32:10,229 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16150
+INFO 2024-12-05 00:32:10,255 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:32:23,791 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8299
+INFO 2024-12-05 00:32:23,889 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-12-05 00:32:25,655 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:32:25,724 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 00:32:25,749 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-12-05 00:32:34,626 log Forbidden (CSRF token from POST incorrect.): /register/
+WARNING 2024-12-05 00:32:34,627 basehttp "POST /register/ HTTP/1.1" 403 2503
+WARNING 2024-12-05 00:32:40,197 log Forbidden (CSRF token from POST incorrect.): /register/
+WARNING 2024-12-05 00:32:40,198 basehttp "POST /register/ HTTP/1.1" 403 2503
+INFO 2024-12-05 00:32:42,146 basehttp "GET /register/ HTTP/1.1" 200 1764
+WARNING 2024-12-05 00:32:53,207 views Registration failed: Passwords do not match for username 'ASMEEH'.
+INFO 2024-12-05 00:32:53,253 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:32:53,258 basehttp "GET /register/ HTTP/1.1" 200 1916
+INFO 2024-12-05 00:33:17,303 views New user registered: Username 'ASMEHH', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 00:33:17,305 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:33:17,308 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-05 00:37:21,903 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:37:22,600 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:39:16,411 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:39:19,532 views User 'admin' accessed the home page.
+INFO 2024-12-05 00:39:19,542 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 00:39:23,402 views User 'admin' logged out.
+INFO 2024-12-05 00:39:23,420 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:39:23,432 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 00:39:25,027 basehttp "GET /register/ HTTP/1.1" 200 1764
+WARNING 2024-12-05 00:39:38,619 views Registration failed: Email 'asmabenhamouda08@gmail.com' already exists.
+INFO 2024-12-05 00:39:38,635 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:39:38,640 basehttp "GET /register/ HTTP/1.1" 200 1914
+INFO 2024-12-05 00:39:47,116 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:39:47,144 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 00:39:55,344 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:39:55,366 basehttp "GET /admin/ HTTP/1.1" 200 10739
+INFO 2024-12-05 00:39:55,475 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-12-05 00:39:58,133 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16148
+INFO 2024-12-05 00:39:58,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:40:04,379 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8298
+INFO 2024-12-05 00:40:05,843 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:40:05,864 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 00:40:05,881 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:40:09,337 basehttp "GET /admin/ HTTP/1.1" 200 10691
+INFO 2024-12-05 00:40:10,895 views User 'admin' accessed the home page.
+INFO 2024-12-05 00:40:10,897 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 00:40:14,553 views User 'admin' logged out.
+INFO 2024-12-05 00:40:14,616 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:40:14,629 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 00:40:21,406 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 00:40:38,524 views New user registered: Username 'ASMA', Email 'asmabenhamouda08@gmail.com'.
+ERROR 2024-12-05 00:40:38,537 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 150, in RegisterView
+    send_confirmation_email(request, new_user)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 55, in send_confirmation_email
+    uid = urlsafe_base64_encode(user.pk.encode())
+                                ^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'encode'
+ERROR 2024-12-05 00:40:38,539 basehttp "POST /register/ HTTP/1.1" 500 78985
+INFO 2024-12-05 00:41:28,848 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:41:29,522 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:43:29,387 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:43:30,044 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:44:21,100 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:44:23,681 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-05 00:44:23,691 basehttp "GET /login/?next=/ HTTP/1.1" 200 1369
+INFO 2024-12-05 00:44:30,337 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:44:30,363 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 00:44:37,898 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:44:37,921 basehttp "GET /admin/ HTTP/1.1" 200 10691
+INFO 2024-12-05 00:44:42,416 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16146
+INFO 2024-12-05 00:44:42,438 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:44:49,116 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8298
+INFO 2024-12-05 00:44:50,455 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:44:50,480 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 00:44:50,502 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:44:52,951 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 00:45:17,590 views New user registered: Username 'assma', Email 'asmabenhamouda08@gmail.com'.
+ERROR 2024-12-05 00:45:17,621 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 162, in RegisterView
+    send_confirmation_email(request, new_user)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 59, in send_confirmation_email
+    token = default_token_generator.make_token(user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 45, in make_token
+    return self._make_token_with_timestamp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 90, in _make_token_with_timestamp
+    self._make_hash_value(user, timestamp),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 117, in _make_hash_value
+    if user.last_login is None
+       ^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'last_login'
+ERROR 2024-12-05 00:45:17,625 basehttp "POST /register/ HTTP/1.1" 500 91787
+INFO 2024-12-05 00:48:25,592 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:48:26,260 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-05 00:48:30,089 views Registration failed: Username 'assma' already exists.
+WARNING 2024-12-05 00:48:30,093 views Registration failed: Email 'asmabenhamouda08@gmail.com' already exists.
+INFO 2024-12-05 00:48:30,111 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:48:30,123 basehttp "GET /register/ HTTP/1.1" 200 2188
+INFO 2024-12-05 00:48:36,996 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16148
+INFO 2024-12-05 00:48:37,015 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:48:48,291 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8299
+INFO 2024-12-05 00:48:49,680 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:48:49,743 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 00:48:49,797 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:49:14,720 views New user registered: Username 'fanah', Email 'asmabenhamouda08@gmail.com'.
+ERROR 2024-12-05 00:49:14,740 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 162, in RegisterView
+    send_confirmation_email(request, new_user)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 59, in send_confirmation_email
+    token = default_token_generator.make_token(user)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 45, in make_token
+    return self._make_token_with_timestamp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 90, in _make_token_with_timestamp
+    self._make_hash_value(user, timestamp),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\tokens.py", line 117, in _make_hash_value
+    if user.last_login is None
+       ^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'last_login'
+ERROR 2024-12-05 00:49:14,747 basehttp "POST /register/ HTTP/1.1" 500 91787
+INFO 2024-12-05 00:53:42,476 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:53:43,148 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 00:54:39,889 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 00:54:40,604 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-05 00:55:52,555 views Registration failed: Username 'fanah' already exists.
+WARNING 2024-12-05 00:55:52,556 views Registration failed: Email 'asmabenhamouda08@gmail.com' already exists.
+INFO 2024-12-05 00:55:52,577 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:55:52,589 basehttp "GET /register/ HTTP/1.1" 200 2188
+INFO 2024-12-05 00:55:56,961 basehttp "GET /admin/ HTTP/1.1" 200 10603
+INFO 2024-12-05 00:56:00,856 basehttp "GET /admin/ HTTP/1.1" 200 10603
+INFO 2024-12-05 00:56:06,299 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16148
+INFO 2024-12-05 00:56:06,322 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:56:22,280 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8299
+INFO 2024-12-05 00:56:23,692 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:56:23,711 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 00:56:23,727 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 00:56:30,226 basehttp "GET /admin/ HTTP/1.1" 200 10557
+INFO 2024-12-05 00:56:30,894 views User 'admin' accessed the home page.
+INFO 2024-12-05 00:56:30,897 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 00:56:34,023 views User 'admin' logged out.
+INFO 2024-12-05 00:56:34,087 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:56:34,102 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 00:56:36,531 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 00:56:53,893 views New user registered: Username 'assssmaa', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 00:56:56,784 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 00:56:56,802 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-05 01:00:02,984 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 01:00:03,675 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-05 01:00:08,065 views Registration failed: Username 'assssmaa' already exists.
+WARNING 2024-12-05 01:00:08,066 views Registration failed: Email 'asmabenhamouda08@gmail.com' already exists.
+INFO 2024-12-05 01:00:08,083 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:00:08,095 basehttp "GET /register/ HTTP/1.1" 200 2049
+INFO 2024-12-05 01:00:12,712 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:00:12,782 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 01:00:20,773 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:00:20,805 basehttp "GET /admin/ HTTP/1.1" 200 10557
+INFO 2024-12-05 01:00:28,048 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16154
+INFO 2024-12-05 01:00:28,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:00:34,720 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8302
+INFO 2024-12-05 01:00:36,551 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:00:36,574 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 01:00:36,591 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:00:43,569 basehttp "GET /admin/ HTTP/1.1" 200 10509
+INFO 2024-12-05 01:00:45,562 views User 'admin' accessed the home page.
+INFO 2024-12-05 01:00:45,565 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:00:48,926 views User 'admin' logged out.
+INFO 2024-12-05 01:00:48,961 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:00:48,966 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 01:00:52,182 basehttp "GET /register/ HTTP/1.1" 200 1764
+WARNING 2024-12-05 01:01:06,467 views Registration failed: Passwords do not match for username 'hala'.
+INFO 2024-12-05 01:01:06,467 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:01:06,472 basehttp "GET /register/ HTTP/1.1" 200 1916
+INFO 2024-12-05 01:01:29,429 views New user registered: Username 'Hala', Email 'asmabenhamouda08@gmail.com'.
+ERROR 2024-12-05 01:01:34,474 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 163, in RegisterView
+    return redirect('activate_user')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'activate_user' with no arguments not found. 1 pattern(s) tried: ['activate/(?P<uid>[^/]+)/(?P<token>[^/]+)/\\Z']
+ERROR 2024-12-05 01:01:34,476 basehttp "POST /register/ HTTP/1.1" 500 95829
+INFO 2024-12-05 01:04:34,195 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 01:04:34,851 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 01:05:26,753 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-05 01:05:27,404 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 01:05:47,753 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 01:05:48,427 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 01:05:56,196 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 01:06:01,559 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-05 01:06:01,570 basehttp "GET /login/?next=/ HTTP/1.1" 200 1369
+INFO 2024-12-05 01:06:14,244 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:06:14,267 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 01:06:22,241 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:06:22,264 basehttp "GET /admin/ HTTP/1.1" 200 10509
+INFO 2024-12-05 01:06:25,166 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16146
+INFO 2024-12-05 01:06:25,189 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:06:34,896 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8298
+INFO 2024-12-05 01:06:37,326 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:06:37,367 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 01:06:37,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:06:41,855 views User 'admin' accessed the home page.
+INFO 2024-12-05 01:06:41,858 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:06:45,865 views User 'admin' logged out.
+INFO 2024-12-05 01:06:45,890 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:06:45,904 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 01:06:49,800 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 01:07:05,094 views New user registered: Username 'psst', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 01:07:06,984 basehttp "POST /register/ HTTP/1.1" 302 0
+ERROR 2024-12-05 01:07:07,148 log Internal Server Error: /check_email/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 42, in check_email_view
+    return render(request, 'check_email.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+ERROR 2024-12-05 01:07:07,152 basehttp "GET /check_email/ HTTP/1.1" 500 141694
+INFO 2024-12-05 01:07:44,975 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-05 01:08:06,726 basehttp "GET /activate/MTU/chjf3t-1181dac119f3abb553934c577e0cb1a6/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:08:06,744 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-05 01:08:11,847 basehttp "GET /activate/MTQ/chjeuh-3631748efee9539b475d5dd7320023ba/ HTTP/1.1" 200 343
+INFO 2024-12-05 01:08:17,366 basehttp "GET /activate/MTM/chjemt-5dc796b4017dbc3300fefca2151d0955/ HTTP/1.1" 200 343
+INFO 2024-12-05 01:15:05,495 basehttp "GET /register/ HTTP/1.1" 200 1764
+WARNING 2024-12-05 01:15:34,714 views Registration failed: Email 'asmabenhamouda08@gmail.com' already exists.
+INFO 2024-12-05 01:15:34,716 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:15:34,720 basehttp "GET /register/ HTTP/1.1" 200 1914
+INFO 2024-12-05 01:15:40,171 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:15:40,240 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 01:15:49,641 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:15:49,673 basehttp "GET /admin/ HTTP/1.1" 200 10466
+INFO 2024-12-05 01:15:53,473 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16146
+INFO 2024-12-05 01:15:53,547 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:16:07,132 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8298
+INFO 2024-12-05 01:16:09,047 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:16:09,079 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 01:16:09,093 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:16:16,246 views User 'admin' accessed the home page.
+INFO 2024-12-05 01:16:16,251 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:16:22,219 basehttp "GET /admin/ HTTP/1.1" 200 10423
+INFO 2024-12-05 01:16:26,457 views User 'admin' accessed the home page.
+INFO 2024-12-05 01:16:26,459 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:16:29,918 views User 'admin' logged out.
+INFO 2024-12-05 01:16:29,942 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:16:29,959 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 01:16:32,482 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 01:16:48,979 views New user registered: Username '5822', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 01:16:52,216 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:16:52,230 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-05 01:32:13,932 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 01:32:16,763 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-05 01:32:16,773 basehttp "GET /login/?next=/ HTTP/1.1" 200 1369
+INFO 2024-12-05 01:32:21,195 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:32:21,222 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 01:32:28,695 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:32:28,711 basehttp "GET /admin/ HTTP/1.1" 200 10423
+INFO 2024-12-05 01:32:33,822 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16146
+INFO 2024-12-05 01:32:33,845 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:32:36,834 basehttp "GET /admin/auth/user/16/change/ HTTP/1.1" 200 23920
+INFO 2024-12-05 01:32:36,852 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:32:39,268 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16146
+INFO 2024-12-05 01:32:46,183 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8298
+INFO 2024-12-05 01:32:47,792 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:32:47,810 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 01:32:47,826 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 01:32:52,362 views User 'admin' accessed the home page.
+INFO 2024-12-05 01:32:52,374 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:32:55,678 views User 'admin' logged out.
+INFO 2024-12-05 01:32:55,691 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:32:55,695 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 01:32:57,850 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 01:33:13,384 views New user registered: Username 'moh', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 01:33:17,397 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:33:17,404 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-05 01:33:29,923 basehttp "GET /activate/MTc/chjgbd-7b0eb873ef3ed94c818f996684a969cf/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:33:29,927 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-05 01:33:45,633 views User 'moh' successfully logged in.
+INFO 2024-12-05 01:33:45,643 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 01:33:45,650 views User 'moh' accessed the home page.
+INFO 2024-12-05 01:33:45,651 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:33:47,565 views Accessed product list view.
+INFO 2024-12-05 01:33:47,591 basehttp "GET /list/ HTTP/1.1" 200 3180
+INFO 2024-12-05 01:33:54,034 views User 'moh' accessed the to the denied page.
+INFO 2024-12-05 01:33:54,035 basehttp "GET /create/ HTTP/1.1" 200 601
+INFO 2024-12-05 01:33:55,904 views User 'moh' accessed the home page.
+INFO 2024-12-05 01:33:55,908 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:33:59,739 views Accessed product list view.
+INFO 2024-12-05 01:33:59,744 basehttp "GET /list/ HTTP/1.1" 200 3180
+INFO 2024-12-05 01:35:46,464 views User 'moh' accessed the home page.
+INFO 2024-12-05 01:35:46,469 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 01:35:50,140 views User 'moh' Try to access to Logs Page  .
+INFO 2024-12-05 01:35:50,142 views User 'moh' accessed the to the denied page.
+INFO 2024-12-05 01:35:50,145 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-05 01:35:52,277 views User 'moh' accessed the home page.
+INFO 2024-12-05 01:35:52,278 basehttp "GET / HTTP/1.1" 200 2919
+INFO 2024-12-05 09:14:21,996 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:15:04,527 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-05 09:15:05,375 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:15:12,252 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-05 09:15:13,089 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:15:35,959 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-05 09:15:36,901 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:16:10,377 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 09:16:11,339 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:16:37,892 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-05 09:16:38,813 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:16:42,497 views User 'moh' accessed the home page.
+INFO 2024-12-05 09:16:42,553 basehttp "GET / HTTP/1.1" 200 2936
+WARNING 2024-12-05 09:16:43,152 log Not Found: /favicon.ico
+WARNING 2024-12-05 09:16:43,153 basehttp "GET /favicon.ico HTTP/1.1" 404 6431
+INFO 2024-12-05 09:16:46,399 views User 'moh' logged out.
+INFO 2024-12-05 09:16:46,415 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 09:16:46,447 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 09:16:46,477 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-05 09:16:58,080 views User 'admin' successfully logged in.
+INFO 2024-12-05 09:16:58,094 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 09:16:58,106 views User 'admin' accessed the home page.
+INFO 2024-12-05 09:16:58,108 basehttp "GET / HTTP/1.1" 200 2936
+INFO 2024-12-05 09:18:35,637 views User 'admin' accessed the home page.
+INFO 2024-12-05 09:18:35,665 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 09:18:39,020 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 3721
+INFO 2024-12-05 09:18:47,923 basehttp "GET /logsfiltrer/?level=WARNING&minutes=60 HTTP/1.1" 200 1045
+INFO 2024-12-05 09:18:54,602 basehttp "GET /logsfiltrer/?level=ERROR&minutes=60 HTTP/1.1" 200 920
+INFO 2024-12-05 09:18:58,419 basehttp "GET /logsfiltrer/?level=WARNING&minutes=60 HTTP/1.1" 200 1045
+INFO 2024-12-05 09:21:26,980 basehttp "GET /logsfiltrer/?level=WARNING&minutes=60 HTTP/1.1" 200 3551
+INFO 2024-12-05 09:23:48,757 basehttp "GET /logsfiltrer/?level=WARNING&minutes=60 HTTP/1.1" 200 3706
+INFO 2024-12-05 09:24:01,334 basehttp "GET /logsfiltrer/?level=WARNING&minutes=60 HTTP/1.1" 200 3706
+INFO 2024-12-05 09:24:05,165 basehttp "GET /logsfiltrer/?level=INFO&minutes=60 HTTP/1.1" 200 7365
+INFO 2024-12-05 09:24:15,808 basehttp "GET /logsfiltrer/?level=INFO&minutes=60 HTTP/1.1" 200 7352
+INFO 2024-12-05 09:24:24,594 views User 'admin' logged out.
+INFO 2024-12-05 09:24:24,649 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 09:24:24,658 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 09:24:38,864 views User 'douda' successfully logged in.
+INFO 2024-12-05 09:24:38,876 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 09:24:38,890 views User 'douda' accessed the home page.
+INFO 2024-12-05 09:24:38,895 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 09:24:42,519 basehttp "GET /logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-05 09:24:42,714 basehttp "GET /admin/login/?next=/logsfiltrer/ HTTP/1.1" 200 3686
+INFO 2024-12-05 09:24:48,667 views User 'douda' Try to access to Logs Page  .
+INFO 2024-12-05 09:24:48,669 views User 'douda' accessed the to the denied page.
+INFO 2024-12-05 09:24:48,690 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-05 09:24:50,500 views User 'douda' accessed the home page.
+INFO 2024-12-05 09:24:50,504 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 09:24:59,977 views Accessed product creation view.
+INFO 2024-12-05 09:25:00,107 basehttp "GET /create/ HTTP/1.1" 200 5074
+INFO 2024-12-05 09:25:00,262 basehttp "GET /captcha/image/9fdad354d4b34e14c486ee273019b6615839cfe2/ HTTP/1.1" 200 3746
+INFO 2024-12-05 09:35:12,599 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-05 09:35:13,737 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:36:49,824 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 09:36:50,755 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:38:23,801 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:38:26,209 views User 'douda' accessed the home page.
+INFO 2024-12-05 09:38:26,228 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 09:38:31,709 views Accessed product creation view.
+INFO 2024-12-05 09:38:31,827 basehttp "GET /create/ HTTP/1.1" 200 4604
+INFO 2024-12-05 09:38:31,905 basehttp "GET /captcha/image/196e9d9f9d4ca12ff9ddd895b836585d3835254c/ HTTP/1.1" 200 3931
+INFO 2024-12-05 09:43:44,850 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 09:43:45,931 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:47:59,282 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-05 09:48:00,113 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 09:48:02,933 views User 'douda' accessed the home page.
+INFO 2024-12-05 09:48:02,953 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 09:48:06,977 views Accessed product creation view.
+INFO 2024-12-05 09:48:07,075 basehttp "GET /create/ HTTP/1.1" 200 4808
+INFO 2024-12-05 09:48:07,192 basehttp "GET /captcha/image/437e9e138505d9ec3ecb7c5e7d07a4e25aef6860/ HTTP/1.1" 200 4910
+INFO 2024-12-05 10:19:00,824 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:23:47,625 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:23:50,747 views User 'douda' accessed the home page.
+INFO 2024-12-05 10:23:50,768 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 10:23:54,766 views Accessed product creation view.
+INFO 2024-12-05 10:23:54,821 basehttp "GET /create/ HTTP/1.1" 200 5599
+INFO 2024-12-05 10:23:54,903 basehttp "GET /captcha/image/ccd48470dc34284050296a0598f883f11413a743/ HTTP/1.1" 200 4107
+INFO 2024-12-05 10:24:16,484 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:24:16,526 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3825
+INFO 2024-12-05 10:24:25,079 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:24:25,155 basehttp "GET /admin/ HTTP/1.1" 200 10377
+INFO 2024-12-05 10:24:27,873 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16144
+INFO 2024-12-05 10:24:27,977 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:24:32,343 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 13406
+INFO 2024-12-05 10:24:32,368 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:24:43,466 basehttp "POST /admin/Core/product/ HTTP/1.1" 200 8559
+INFO 2024-12-05 10:24:45,415 basehttp "POST /admin/Core/product/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:24:45,439 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 10035
+INFO 2024-12-05 10:24:45,464 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:24:47,413 basehttp "GET /admin/Core/passwordreset/ HTTP/1.1" 200 8283
+INFO 2024-12-05 10:24:47,450 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:24:52,559 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 9897
+INFO 2024-12-05 10:24:52,657 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:24:58,039 views Accessed product creation view.
+INFO 2024-12-05 10:24:58,114 basehttp "GET /create/ HTTP/1.1" 200 5599
+INFO 2024-12-05 10:24:58,141 basehttp "GET /captcha/image/0c1cbd4cd293d66d56daae34acccf69ed58a3600/ HTTP/1.1" 200 4296
+INFO 2024-12-05 10:26:17,735 views Accessed product creation view.
+INFO 2024-12-05 10:26:17,774 basehttp "GET /create/ HTTP/1.1" 200 5191
+INFO 2024-12-05 10:26:17,808 basehttp "GET /captcha/image/7fd6e77741b370d5de63797446732acb440c4859/ HTTP/1.1" 200 3600
+INFO 2024-12-05 10:27:03,682 views Accessed product creation view.
+INFO 2024-12-05 10:27:03,869 views Product created successfully.
+INFO 2024-12-05 10:27:03,871 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:27:03,876 views Accessed product list view.
+INFO 2024-12-05 10:27:03,889 basehttp "GET /list/ HTTP/1.1" 200 3737
+INFO 2024-12-05 10:27:07,799 views Accessed product update view for product_id: 5.
+INFO 2024-12-05 10:27:07,847 basehttp "GET /update/5/ HTTP/1.1" 200 5272
+INFO 2024-12-05 10:27:07,915 basehttp "GET /captcha/image/73809df0c353cfb0fa4f9c1eeca3c7ee203c4371/ HTTP/1.1" 200 4239
+INFO 2024-12-05 10:27:28,149 views Accessed product update view for product_id: 5.
+INFO 2024-12-05 10:27:28,206 views Product with product_id: 5 updated successfully.
+INFO 2024-12-05 10:27:28,209 basehttp "POST /update/5/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:27:28,219 views Accessed product list view.
+INFO 2024-12-05 10:27:28,238 basehttp "GET /list/ HTTP/1.1" 200 3737
+INFO 2024-12-05 10:27:39,731 basehttp "GET /admin/ HTTP/1.1" 200 10342
+INFO 2024-12-05 10:27:44,898 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 12332
+INFO 2024-12-05 10:27:44,927 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:30:54,038 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\admin.py changed, reloading.
+INFO 2024-12-05 10:30:55,066 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:33:29,079 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\admin.py changed, reloading.
+INFO 2024-12-05 10:33:30,165 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:33:37,386 views User 'admin' accessed the home page.
+INFO 2024-12-05 10:33:37,408 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 10:33:41,036 basehttp "GET /admin/ HTTP/1.1" 200 10342
+INFO 2024-12-05 10:33:46,514 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 12558
+INFO 2024-12-05 10:33:46,542 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:37:34,320 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-05 10:37:35,236 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:42:24,824 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-05 10:42:25,797 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 10:45:56,264 views User 'admin' accessed the home page.
+INFO 2024-12-05 10:45:56,288 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 10:46:00,647 views Accessed product creation view.
+INFO 2024-12-05 10:46:00,739 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 10:46:00,834 basehttp "GET /captcha/image/8caa29b6ec27190602c554470849450b766059bd/ HTTP/1.1" 200 3481
+INFO 2024-12-05 10:46:29,237 views Accessed product creation view.
+INFO 2024-12-05 10:46:29,320 views Product created successfully.
+INFO 2024-12-05 10:46:29,322 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:46:29,331 views Accessed product list view.
+INFO 2024-12-05 10:46:29,353 basehttp "GET /list/ HTTP/1.1" 200 4170
+INFO 2024-12-05 10:46:40,859 basehttp "GET /admin/ HTTP/1.1" 200 10342
+INFO 2024-12-05 10:46:43,430 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 13106
+INFO 2024-12-05 10:46:43,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:58:20,196 views User 'admin' logged out.
+INFO 2024-12-05 10:58:20,210 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:58:20,218 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 10:58:34,622 views User 'douda' successfully logged in.
+INFO 2024-12-05 10:58:34,633 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:58:34,643 views User 'douda' accessed the home page.
+INFO 2024-12-05 10:58:34,646 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 10:58:38,331 basehttp "GET /logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:58:38,350 basehttp "GET /admin/login/?next=/logsfiltrer/ HTTP/1.1" 200 3686
+INFO 2024-12-05 10:58:45,167 views User 'douda' Try to access to Logs Page  .
+INFO 2024-12-05 10:58:45,168 views User 'douda' accessed the to the denied page.
+INFO 2024-12-05 10:58:45,170 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-05 10:58:58,024 views Accessed product creation view.
+INFO 2024-12-05 10:58:58,107 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 10:58:58,174 basehttp "GET /captcha/image/14c50c8121e0af3858f154215b0e208196d836fe/ HTTP/1.1" 200 3904
+INFO 2024-12-05 10:59:04,441 views Accessed product list view.
+INFO 2024-12-05 10:59:04,464 basehttp "GET /list/ HTTP/1.1" 200 3372
+INFO 2024-12-05 10:59:19,802 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:59:19,819 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3825
+INFO 2024-12-05 10:59:27,330 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:59:27,353 basehttp "GET /admin/ HTTP/1.1" 200 10342
+INFO 2024-12-05 10:59:29,626 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16144
+INFO 2024-12-05 10:59:29,665 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:59:32,747 basehttp "GET /admin/auth/user/5/change/ HTTP/1.1" 200 23955
+INFO 2024-12-05 10:59:32,781 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:59:46,034 basehttp "POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 10:59:46,086 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16337
+INFO 2024-12-05 10:59:46,121 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 10:59:52,335 views Accessed product creation view.
+INFO 2024-12-05 10:59:52,416 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 10:59:52,461 basehttp "GET /captcha/image/d4733e075abdef775e51f14d32515e84aa02d680/ HTTP/1.1" 200 3895
+INFO 2024-12-05 11:00:04,214 views User 'admin' accessed the home page.
+INFO 2024-12-05 11:00:04,216 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:00:06,375 views User 'admin' logged out.
+INFO 2024-12-05 11:00:06,436 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:00:06,443 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 11:00:33,825 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:00:37,835 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-05 11:00:37,852 basehttp "GET /login/?next=/ HTTP/1.1" 200 1212
+INFO 2024-12-05 11:00:40,267 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 11:01:14,885 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:01:14,925 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 11:01:27,145 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:01:27,169 basehttp "GET /admin/ HTTP/1.1" 200 10384
+INFO 2024-12-05 11:01:29,180 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16144
+INFO 2024-12-05 11:01:29,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:01:37,089 basehttp "GET /admin/auth/user/17/change/ HTTP/1.1" 200 23952
+INFO 2024-12-05 11:01:37,121 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:01:39,650 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16144
+INFO 2024-12-05 11:01:54,121 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8297
+INFO 2024-12-05 11:01:56,581 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:01:56,616 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 15802
+INFO 2024-12-05 11:01:56,647 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:02:05,192 basehttp "GET /admin/ HTTP/1.1" 200 10382
+INFO 2024-12-05 11:02:05,365 views User 'admin' accessed the home page.
+INFO 2024-12-05 11:02:05,369 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:02:06,999 basehttp "GET /admin/ HTTP/1.1" 200 10382
+INFO 2024-12-05 11:02:11,082 basehttp "GET /admin/ HTTP/1.1" 200 10382
+INFO 2024-12-05 11:02:12,087 views User 'admin' accessed the home page.
+INFO 2024-12-05 11:02:12,088 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:02:15,056 views User 'admin' logged out.
+INFO 2024-12-05 11:02:15,071 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:02:15,076 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 11:02:23,262 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-05 11:02:57,137 views New user registered: Username 'amouna', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-05 11:02:58,581 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:02:58,612 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-05 11:03:17,134 basehttp "GET /activate/MTg/chk6ox-a883c9371723ed3d59eda1a371c3aeca/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:03:17,149 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-05 11:03:36,692 views User 'amouna' successfully logged in.
+INFO 2024-12-05 11:03:36,707 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:03:36,723 views User 'amouna' accessed the home page.
+INFO 2024-12-05 11:03:36,727 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:03:42,389 views User 'amouna' accessed the to the denied page.
+INFO 2024-12-05 11:03:42,394 basehttp "GET /create/ HTTP/1.1" 200 601
+INFO 2024-12-05 11:03:48,843 views User 'amouna' accessed the home page.
+INFO 2024-12-05 11:03:48,845 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:03:50,733 views Accessed product list view.
+INFO 2024-12-05 11:03:50,746 basehttp "GET /list/ HTTP/1.1" 200 3372
+INFO 2024-12-05 11:03:57,671 views User 'amouna' Try to access to Logs Page  .
+INFO 2024-12-05 11:03:57,673 views User 'amouna' accessed the to the denied page.
+INFO 2024-12-05 11:03:57,677 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-05 11:03:59,012 views User 'amouna' accessed the home page.
+INFO 2024-12-05 11:03:59,016 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:04:00,393 basehttp "GET /logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:04:00,420 basehttp "GET /admin/login/?next=/logsfiltrer/ HTTP/1.1" 200 3838
+INFO 2024-12-05 11:04:13,569 basehttp "POST /admin/login/?next=/logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:04:13,627 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 21809
+INFO 2024-12-05 11:04:17,110 views User 'admin' accessed the home page.
+INFO 2024-12-05 11:04:17,114 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:04:18,673 views Accessed product creation view.
+INFO 2024-12-05 11:04:18,697 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 11:04:18,780 basehttp "GET /captcha/image/0251a02c444a8db0db80eb5b7f6976cd9873535d/ HTTP/1.1" 200 4520
+INFO 2024-12-05 11:04:57,967 views Accessed product creation view.
+WARNING 2024-12-05 11:04:58,014 views Invalid form data for product creation.
+INFO 2024-12-05 11:04:58,065 basehttp "POST /create/ HTTP/1.1" 200 5371
+INFO 2024-12-05 11:04:58,148 basehttp "GET /captcha/image/5270d94bd92a81f09f5bc423b43da509c587c0c2/ HTTP/1.1" 200 4849
+INFO 2024-12-05 11:05:13,352 views Accessed product creation view.
+ERROR 2024-12-05 11:05:13,950 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 370, in product_create_view
+    form.save()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 57, in save
+    product.bank_number = self.encrypt_aes(raw_bank_number, key_size)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 78, in encrypt_aes
+    cipher = AES.new(key, AES.MODE_ECB)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\_mode_ecb.py", line 216, in _create_ecb_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (12 bytes)
+ERROR 2024-12-05 11:05:13,955 basehttp "POST /create/ HTTP/1.1" 500 99828
+INFO 2024-12-05 11:05:37,466 views Accessed product creation view.
+WARNING 2024-12-05 11:05:37,482 views Invalid form data for product creation.
+INFO 2024-12-05 11:05:37,522 basehttp "POST /create/ HTTP/1.1" 200 5371
+INFO 2024-12-05 11:05:37,568 basehttp "GET /captcha/image/33f3d6ff63310f3517f8f71cc83d0b149c094f93/ HTTP/1.1" 200 3942
+INFO 2024-12-05 11:05:49,389 views Accessed product creation view.
+INFO 2024-12-05 11:05:49,465 views Product created successfully.
+INFO 2024-12-05 11:05:49,467 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:05:49,477 views Accessed product list view.
+INFO 2024-12-05 11:05:49,500 basehttp "GET /list/ HTTP/1.1" 200 4613
+INFO 2024-12-05 11:06:16,254 views User 'admin' logged out.
+INFO 2024-12-05 11:06:16,319 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:06:16,331 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 11:06:33,407 views User 'douda' successfully logged in.
+INFO 2024-12-05 11:06:33,420 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:06:33,428 views User 'douda' accessed the home page.
+INFO 2024-12-05 11:06:33,430 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:06:38,296 views Accessed product list view.
+INFO 2024-12-05 11:06:38,307 basehttp "GET /list/ HTTP/1.1" 200 3372
+INFO 2024-12-05 11:06:40,995 views Accessed product creation view.
+INFO 2024-12-05 11:06:41,068 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 11:06:41,108 basehttp "GET /captcha/image/6c6e9386ae3f21cef2ec2986007eba2b00ea9509/ HTTP/1.1" 200 3923
+INFO 2024-12-05 11:07:39,847 views Accessed product creation view.
+ERROR 2024-12-05 11:07:39,937 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 370, in product_create_view
+    form.save()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 57, in save
+    product.bank_number = self.encrypt_aes(raw_bank_number, key_size)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 78, in encrypt_aes
+    cipher = AES.new(key, AES.MODE_ECB)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\_mode_ecb.py", line 216, in _create_ecb_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (12 bytes)
+ERROR 2024-12-05 11:07:39,939 basehttp "POST /create/ HTTP/1.1" 500 99798
+INFO 2024-12-05 11:09:31,238 views Accessed product creation view.
+WARNING 2024-12-05 11:09:31,258 views Invalid form data for product creation.
+INFO 2024-12-05 11:09:31,292 basehttp "POST /create/ HTTP/1.1" 200 5357
+INFO 2024-12-05 11:09:31,323 basehttp "GET /captcha/image/123e78d49a9d3c93675dea473983e0ebfd0aede8/ HTTP/1.1" 200 3603
+INFO 2024-12-05 11:09:44,122 views Accessed product creation view.
+WARNING 2024-12-05 11:09:44,126 views Invalid form data for product creation.
+INFO 2024-12-05 11:09:44,155 basehttp "POST /create/ HTTP/1.1" 200 5357
+INFO 2024-12-05 11:09:44,181 basehttp "GET /captcha/image/677f9a24231dd2a2a935e8a4814bffc8b8df1745/ HTTP/1.1" 200 4331
+INFO 2024-12-05 11:09:59,593 views Accessed product creation view.
+ERROR 2024-12-05 11:09:59,724 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 370, in product_create_view
+    form.save()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 57, in save
+    product.bank_number = self.encrypt_aes(raw_bank_number, key_size)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 78, in encrypt_aes
+    cipher = AES.new(key, AES.MODE_ECB)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\_mode_ecb.py", line 216, in _create_ecb_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (12 bytes)
+ERROR 2024-12-05 11:09:59,733 basehttp "POST /create/ HTTP/1.1" 500 99804
+INFO 2024-12-05 11:22:25,353 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-05 11:22:26,428 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:22:29,926 views User 'douda' accessed the home page.
+INFO 2024-12-05 11:22:29,946 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:22:34,142 views Accessed product creation view.
+INFO 2024-12-05 11:22:34,220 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 11:22:34,316 basehttp "GET /captcha/image/82b9b4af1f74a7ea53c1e061be82bdf475b937f5/ HTTP/1.1" 200 4096
+INFO 2024-12-05 11:23:01,965 views Accessed product creation view.
+ERROR 2024-12-05 11:23:02,144 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 58, in save
+    product.bank_number = self.encrypt_aes(raw_bank_number, key_size)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 91, in encrypt_aes
+    cipher = AES.new(key, AES.MODE_ECB)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 228, in new
+    return _create_cipher(sys.modules[__name__], key, mode, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\__init__.py", line 79, in _create_cipher
+    return modes[mode](factory, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\_mode_ecb.py", line 216, in _create_ecb_cipher
+    cipher_state = factory._create_base_cipher(kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\Crypto\Cipher\AES.py", line 90, in _create_base_cipher
+    raise ValueError("Incorrect AES key length (%d bytes)" % len(key))
+ValueError: Incorrect AES key length (22 bytes)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 370, in product_create_view
+    form.save()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 60, in save
+    raise ValueError(f"Invalid AES key size: {encryption_type}")
+ValueError: Invalid AES key size: aes192
+ERROR 2024-12-05 11:23:02,150 basehttp "POST /create/ HTTP/1.1" 500 105247
+INFO 2024-12-05 11:25:46,848 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-05 11:25:47,944 autoreload Watching for file changes with StatReloader
+INFO 2024-12-05 11:28:13,077 views User 'douda' accessed the home page.
+INFO 2024-12-05 11:28:13,097 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:28:16,479 views Accessed product creation view.
+INFO 2024-12-05 11:28:16,599 basehttp "GET /create/ HTTP/1.1" 200 5193
+INFO 2024-12-05 11:28:16,690 basehttp "GET /captcha/image/092f12fa4233ebca1bbb52a6c6d08ef6556c2e6a/ HTTP/1.1" 200 3456
+INFO 2024-12-05 11:28:51,983 views Accessed product creation view.
+INFO 2024-12-05 11:28:52,111 views Product created successfully.
+INFO 2024-12-05 11:28:52,113 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:28:52,117 views Accessed product list view.
+INFO 2024-12-05 11:28:52,132 basehttp "GET /list/ HTTP/1.1" 200 3730
+INFO 2024-12-05 11:29:59,742 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:29:59,775 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3674
+INFO 2024-12-05 11:30:07,368 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:30:07,388 basehttp "GET /admin/ HTTP/1.1" 200 10382
+INFO 2024-12-05 11:30:10,259 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16145
+INFO 2024-12-05 11:30:10,298 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:30:13,732 basehttp "GET /admin/auth/user/5/change/ HTTP/1.1" 200 23964
+INFO 2024-12-05 11:30:13,758 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:30:26,136 basehttp "POST /admin/auth/user/5/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:30:26,170 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16338
+INFO 2024-12-05 11:30:26,197 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:30:31,215 basehttp "GET /admin/ HTTP/1.1" 200 10423
+INFO 2024-12-05 11:30:31,374 views User 'admin' accessed the home page.
+INFO 2024-12-05 11:30:31,376 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-05 11:30:34,175 views User 'admin' logged out.
+INFO 2024-12-05 11:30:34,234 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:30:34,249 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-05 11:30:46,242 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:30:46,253 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-05 11:30:57,890 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:30:57,933 basehttp "GET /admin/ HTTP/1.1" 200 10423
+INFO 2024-12-05 11:31:11,171 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12852
+INFO 2024-12-05 11:31:11,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:31:11,307 basehttp "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2024-12-05 11:31:11,323 basehttp "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2024-12-05 11:31:38,207 basehttp "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:31:38,305 basehttp "GET /admin/auth/user/19/change/ HTTP/1.1" 200 24077
+INFO 2024-12-05 11:31:38,335 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:31:54,499 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-05 11:31:54,527 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:31:57,502 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13838
+INFO 2024-12-05 11:31:57,531 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:32:35,224 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-05 11:32:38,615 basehttp "GET /admin/auth/group/7/change/ HTTP/1.1" 200 13797
+INFO 2024-12-05 11:32:38,649 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:32:42,783 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-05 11:32:46,825 basehttp "GET /admin/auth/group/3/change/ HTTP/1.1" 200 13859
+INFO 2024-12-05 11:32:46,866 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:32:50,771 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11510
+INFO 2024-12-05 11:32:55,412 basehttp "GET /admin/auth/group/3/change/ HTTP/1.1" 200 13859
+INFO 2024-12-05 11:32:55,446 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:33:04,107 basehttp "POST /admin/auth/group/3/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:33:04,177 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11690
+INFO 2024-12-05 11:33:04,203 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:33:07,584 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 13860
+INFO 2024-12-05 11:33:07,611 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:33:28,590 basehttp "POST /admin/auth/group/2/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:33:28,656 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11696
+INFO 2024-12-05 11:33:28,691 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:33:45,965 basehttp "GET /admin/auth/group/4/change/ HTTP/1.1" 200 13806
+INFO 2024-12-05 11:33:45,991 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:01,414 basehttp "POST /admin/auth/group/4/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:34:01,470 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11688
+INFO 2024-12-05 11:34:01,494 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:09,436 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13838
+INFO 2024-12-05 11:34:09,462 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:19,951 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11486
+INFO 2024-12-05 11:34:22,509 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13838
+INFO 2024-12-05 11:34:22,541 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:24,960 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11486
+INFO 2024-12-05 11:34:26,257 basehttp "GET /admin/auth/group/7/change/ HTTP/1.1" 200 13797
+INFO 2024-12-05 11:34:26,286 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:28,361 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11486
+INFO 2024-12-05 11:34:29,957 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13838
+INFO 2024-12-05 11:34:29,978 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:34:58,976 basehttp "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:34:59,031 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 11711
+INFO 2024-12-05 11:34:59,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:36:06,681 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 16583
+INFO 2024-12-05 11:36:06,717 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:36:10,458 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12852
+INFO 2024-12-05 11:36:10,489 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:36:33,979 basehttp "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:36:34,031 basehttp "GET /admin/auth/user/20/change/ HTTP/1.1" 200 24098
+INFO 2024-12-05 11:36:34,064 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:38:42,046 basehttp "POST /admin/auth/user/20/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:38:42,073 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 17237
+INFO 2024-12-05 11:38:42,136 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:38:46,027 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12852
+INFO 2024-12-05 11:38:46,054 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:39:03,633 basehttp "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:39:03,670 basehttp "GET /admin/auth/user/21/change/ HTTP/1.1" 200 24078
+INFO 2024-12-05 11:39:03,703 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-05 11:39:24,573 basehttp "POST /admin/auth/user/21/change/ HTTP/1.1" 302 0
+INFO 2024-12-05 11:39:24,603 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 17677
+INFO 2024-12-05 11:39:24,629 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342

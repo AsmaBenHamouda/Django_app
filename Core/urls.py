@@ -1,5 +1,8 @@
 from django.urls import path 
 from . import views
+from .views import admin_logs_view
+from .views import logs_view_admin
+
 
 urlpatterns = [
     path('', views.home_view, name='home'),
@@ -13,7 +16,12 @@ urlpatterns = [
     path('list/', views.product_list_view, name="product_list"),
     path('update/<int:product_id>/', views.product_update_view, name="product_update"),
     path('delete/<int:product_id>/', views.product_delete_view, name="product_delete"),
-    
+    path('logs/', admin_logs_view, name='admin_logs'),
+    path('logsfiltrer/', logs_view_admin, name='logs_view'),  
+    path('activate/<str:uid>/<str:token>/', views.activate_user, name='activate_user'),
+    path('check_email/', views.check_email_view, name='check_email'),  # Add this line
+
+  
 
     
 ]

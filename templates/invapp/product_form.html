@@ -7,6 +7,10 @@
 <h1 class="text-center">Product Form</h1>
 <form method="POST" class="jumbotron">
     {% csrf_token %}
+    <div class="form-group">
+        <label for="created_by">Created By:</label>
+        <p id="created_by" class="form-control-static"><strong>{{ username }}</strong></p> <!-- Nom de l'utilisateur -->
+    </div>
     {{form}}
     <button class="btn btn-success btn-block" type="submit">Save Product</button>
 </form>

@@ -7,13 +7,22 @@ admin.site.register(User, UserAdmin)
 admin.site.register(PasswordReset)
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'sku', 'price', 'quantity', 'supplier', 'display_encrypted_bank_number','created_by')
+    
+    list_display = ('name', 'sku', 'price', 'quantity', 'supplier', 'encryption_type', 'created_by','get_encrypted_bank_number')
+    readonly_fields = ('display_encrypted_bank_number',)
     list_filter = ('created_by', 'supplier')
     search_fields = ('name', 'sku')
-    def display_encrypted_bank_number(self, obj):
-        return obj.display_encrypted_bank_number()
+    
+    
+    def get_encrypted_bank_number(self, obj):
+        """Return the encrypted bank number in a readable format."""
+        if obj.bank_number:
+            return obj.bank_number.hex()  # Return hex representation of encrypted bank number
+        return None  # If no bank number is set, return None
+    
+    get_encrypted_bank_number.short_description = "Encrypted Bank Number"
 
-    display_encrypted_bank_number.short_description = "Encrypted Bank Number"
+    
     def get_queryset(self, request):
         """Customize the queryset to filter products based on permissions."""
         qs = super().get_queryset(request)
