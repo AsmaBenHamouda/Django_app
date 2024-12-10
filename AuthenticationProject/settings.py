@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 import json
 import logging
+from cryptography.fernet import Fernet
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -145,7 +147,15 @@ RECAPTCHA_PRIVATE_KEY = '6LcEro4qAAAAABYxWQ0jFdSp8ZQXwRfaJtAc0X_K'
 # settings.py for django-simple-captcha
 # settings.py
 FERNET_KEY = b'CztzOGIFnVi1ZXE1b_BopTnyc2K5jmfd9prpPHwpYMc='  # Replace with your actual key
+FERNET_MASTER_KEY = b'CztzOGIFnVi1ZXE1b_BopTnyc2K5jmfd9prpPHwpYMc='
+AES_KEYS = {
+    'aes128': b'ASMAASMAASMAASMA',
+    'aes192': b'ASMAASMAASMAASMAASMAAS',
+    'aes256': b'ASMAASMAASMAASMAASMAASMAASMAASMA',
+    'caesar': '3', 
+}
 
+MASTER_KEY = b"bW9ja2tleWZvcmV4YW1wbGUyMzQ1Njc4OTA="
 
 import os
 

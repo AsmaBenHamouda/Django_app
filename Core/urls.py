@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from .views import admin_logs_view
 from .views import logs_view_admin
+from .views import manage_encryption_keys
+from .views import admin_dashboard_view
 
 
 urlpatterns = [
@@ -20,6 +22,8 @@ urlpatterns = [
     path('logsfiltrer/', logs_view_admin, name='logs_view'),  
     path('activate/<str:uid>/<str:token>/', views.activate_user, name='activate_user'),
     path('check_email/', views.check_email_view, name='check_email'),  # Add this line
+    path('manage-keys/', manage_encryption_keys, name='manage_keys'),  # Add this line
+    path('admin-dashboard/', admin_dashboard_view, name='admin_dashboard'),
 
   
 

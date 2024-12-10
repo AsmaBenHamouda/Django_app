@@ -2602,3 +2602,2389 @@ INFO 2024-12-05 11:39:03,703 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2024-12-05 11:39:24,573 basehttp "POST /admin/auth/user/21/change/ HTTP/1.1" 302 0
 INFO 2024-12-05 11:39:24,603 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 17677
 INFO 2024-12-05 11:39:24,629 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-08 16:32:40,867 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:35:38,836 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-08 19:35:40,086 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:36:24,857 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-08 19:36:26,088 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:56:11,393 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-08 19:56:12,527 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:57:47,178 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-08 19:57:48,250 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:57:52,745 views User 'admin' accessed the home page.
+INFO 2024-12-08 19:57:52,768 basehttp "GET / HTTP/1.1" 200 3111
+WARNING 2024-12-08 19:57:53,274 log Not Found: /favicon.ico
+WARNING 2024-12-08 19:57:53,277 basehttp "GET /favicon.ico HTTP/1.1" 404 6696
+INFO 2024-12-08 19:57:58,921 basehttp "GET /admin/ HTTP/1.1" 200 10797
+INFO 2024-12-08 19:57:58,947 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:58,947 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:58,949 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,250 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,294 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,295 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,297 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,329 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-08 19:57:59,330 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-08 19:58:05,027 basehttp "GET /manage-keys HTTP/1.1" 301 0
+ERROR 2024-12-08 19:58:05,460 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: Core_encryptionkey
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 79, in manage_keys
+    return render(request, 'manage_keys.html', {'form': form, 'keys': keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: Core_encryptionkey
+ERROR 2024-12-08 19:58:05,470 basehttp "GET /manage-keys/ HTTP/1.1" 500 209231
+INFO 2024-12-08 19:58:30,403 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-08 19:58:30,430 basehttp "GET /static/style.css HTTP/1.1" 304 0
+ERROR 2024-12-08 19:58:42,405 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: Core_encryptionkey
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 79, in manage_keys
+    return render(request, 'manage_keys.html', {'form': form, 'keys': keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: Core_encryptionkey
+ERROR 2024-12-08 19:58:42,408 basehttp "GET /manage-keys/ HTTP/1.1" 500 209231
+INFO 2024-12-08 19:59:29,191 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-08 19:59:30,473 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:59:32,925 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-08 19:59:33,900 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:59:41,360 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-08 19:59:42,568 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 19:59:44,870 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-08 19:59:45,806 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 20:00:09,711 autoreload Watching for file changes with StatReloader
+INFO 2024-12-08 20:00:11,957 views User 'admin' accessed the home page.
+INFO 2024-12-08 20:00:11,978 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-08 20:00:15,055 views User 'admin' logged out.
+INFO 2024-12-08 20:00:15,111 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-08 20:00:15,122 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-08 20:00:25,550 views User 'admin' successfully logged in.
+INFO 2024-12-08 20:00:25,563 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-08 20:00:25,574 views User 'admin' accessed the home page.
+INFO 2024-12-08 20:00:25,576 basehttp "GET / HTTP/1.1" 200 3111
+INFO 2024-12-08 20:01:25,766 views User 'admin' accessed the home page.
+INFO 2024-12-08 20:01:25,830 basehttp "GET / HTTP/1.1" 200 3288
+INFO 2024-12-08 20:01:29,475 basehttp "GET /manage-keys/ HTTP/1.1" 200 3892
+INFO 2024-12-08 20:01:53,648 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-08 20:01:53,722 basehttp "GET /manage-keys/ HTTP/1.1" 200 4001
+INFO 2024-12-08 20:02:50,332 basehttp "GET /admin/ HTTP/1.1" 200 10947
+INFO 2024-12-08 20:02:50,832 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-08 20:03:19,526 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-08 20:03:19,561 basehttp "GET /manage-keys/ HTTP/1.1" 200 4001
+INFO 2024-12-08 20:38:56,058 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:24:11,731 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:24:14,076 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:24:14,134 basehttp "GET / HTTP/1.1" 200 3128
+WARNING 2024-12-09 07:24:14,731 log Not Found: /favicon.ico
+WARNING 2024-12-09 07:24:14,732 basehttp "GET /favicon.ico HTTP/1.1" 404 6431
+INFO 2024-12-09 07:24:17,637 basehttp "GET /admin/ HTTP/1.1" 200 11431
+INFO 2024-12-09 07:24:36,314 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 200 14620
+INFO 2024-12-09 07:24:36,350 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,351 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,355 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,358 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,359 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,361 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,362 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,368 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,371 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,372 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,372 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,372 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,413 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:24:36,424 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,429 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,514 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,515 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,515 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:36,516 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:51,849 basehttp "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:24:52,020 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12455
+INFO 2024-12-09 07:24:52,047 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:52,050 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:24:52,116 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:24:52,135 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:16,250 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\admin.py changed, reloading.
+INFO 2024-12-09 07:27:17,545 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:27:27,032 basehttp "GET /admin/auth/group/8/change/ HTTP/1.1" 200 14936
+INFO 2024-12-09 07:27:27,069 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:27:29,751 basehttp "POST /admin/auth/group/8/change/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:27:29,814 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12457
+INFO 2024-12-09 07:27:29,854 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:27:31,244 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18014
+INFO 2024-12-09 07:27:31,312 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:31,325 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:27:31,405 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:31,405 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:33,675 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 200 25027
+INFO 2024-12-09 07:27:33,698 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:33,707 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:33,707 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:27:33,822 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:33,823 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-12-09 07:27:47,254 basehttp "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:27:47,298 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18207
+INFO 2024-12-09 07:27:47,328 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:31:26,942 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 07:31:28,150 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:32:44,677 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 07:32:45,649 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:33:31,802 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:33:34,718 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:33:34,736 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:33:47,233 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 07:33:47,968 basehttp "GET /manage-keys/ HTTP/1.1" 200 1269
+INFO 2024-12-09 07:33:53,611 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:33:53,622 basehttp "GET /manage-keys/ HTTP/1.1" 200 1380
+INFO 2024-12-09 07:34:01,966 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:34:01,996 basehttp "GET /manage-keys/ HTTP/1.1" 200 1380
+INFO 2024-12-09 07:34:09,311 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:34:09,339 basehttp "GET /manage-keys/ HTTP/1.1" 200 1632
+INFO 2024-12-09 07:34:22,618 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:34:22,628 basehttp "GET /manage-keys/ HTTP/1.1" 200 1643
+INFO 2024-12-09 07:34:26,701 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:34:26,710 basehttp "GET /manage-keys/ HTTP/1.1" 200 1643
+INFO 2024-12-09 07:35:56,543 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 07:35:57,553 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:36:35,740 basehttp "GET /manage-keys/ HTTP/1.1" 200 1532
+INFO 2024-12-09 07:36:38,996 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:36:39,013 basehttp "GET /manage-keys/ HTTP/1.1" 200 1895
+INFO 2024-12-09 07:37:13,331 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:37:13,341 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:37:16,617 views Accessed product creation view.
+INFO 2024-12-09 07:37:16,815 basehttp "GET /create/ HTTP/1.1" 200 5210
+INFO 2024-12-09 07:37:17,026 basehttp "GET /captcha/image/ad69671a61de04e89382251b09b90d28e79bc51e/ HTTP/1.1" 200 3889
+INFO 2024-12-09 07:37:47,819 views Accessed product creation view.
+INFO 2024-12-09 07:37:48,797 views Product created successfully.
+INFO 2024-12-09 07:37:48,799 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:37:48,804 views Accessed product list view.
+INFO 2024-12-09 07:37:48,827 basehttp "GET /list/ HTTP/1.1" 200 5496
+INFO 2024-12-09 07:37:57,915 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 15611
+INFO 2024-12-09 07:37:57,949 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:38:18,518 views Accessed product creation view.
+INFO 2024-12-09 07:38:18,585 basehttp "GET /create/ HTTP/1.1" 200 5210
+INFO 2024-12-09 07:38:18,632 basehttp "GET /captcha/image/8d2fc637542a24e2b47341dd71043d7ea51055fb/ HTTP/1.1" 200 4280
+INFO 2024-12-09 07:38:58,473 views Accessed product creation view.
+INFO 2024-12-09 07:38:58,533 views Product created successfully.
+INFO 2024-12-09 07:38:58,535 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:38:58,539 views Accessed product list view.
+INFO 2024-12-09 07:38:58,549 basehttp "GET /list/ HTTP/1.1" 200 5936
+INFO 2024-12-09 07:39:07,982 basehttp "GET /manage-keys/ HTTP/1.1" 200 1795
+INFO 2024-12-09 07:39:11,379 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:39:11,388 basehttp "GET /manage-keys/ HTTP/1.1" 200 1895
+INFO 2024-12-09 07:39:17,772 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:39:17,784 basehttp "GET /manage-keys/ HTTP/1.1" 200 1895
+INFO 2024-12-09 07:39:18,862 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:39:18,880 basehttp "GET /manage-keys/ HTTP/1.1" 200 1895
+INFO 2024-12-09 07:39:26,446 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 16249
+INFO 2024-12-09 07:39:26,477 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:39:35,821 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:39:35,824 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:39:37,803 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 07:39:42,605 views Accessed product list view.
+INFO 2024-12-09 07:39:42,630 basehttp "GET /list/ HTTP/1.1" 200 5936
+INFO 2024-12-09 07:39:53,124 views Accessed product creation view.
+INFO 2024-12-09 07:39:53,167 basehttp "GET /create/ HTTP/1.1" 200 5210
+INFO 2024-12-09 07:39:53,210 basehttp "GET /captcha/image/3888d2503572732c977dc0b5133386e7bf72808b/ HTTP/1.1" 200 4163
+INFO 2024-12-09 07:40:29,401 views Accessed product creation view.
+WARNING 2024-12-09 07:40:29,413 views Invalid form data for product creation.
+INFO 2024-12-09 07:40:29,434 basehttp "POST /create/ HTTP/1.1" 200 5383
+INFO 2024-12-09 07:40:29,460 basehttp "GET /captcha/image/37a55a35678d700d87c49c1549773e7c0fa052c2/ HTTP/1.1" 200 3672
+INFO 2024-12-09 07:40:49,796 views Accessed product creation view.
+INFO 2024-12-09 07:40:49,825 views Product created successfully.
+INFO 2024-12-09 07:40:49,827 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:40:49,831 views Accessed product list view.
+INFO 2024-12-09 07:40:49,840 basehttp "GET /list/ HTTP/1.1" 200 6379
+INFO 2024-12-09 07:40:57,593 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 16829
+INFO 2024-12-09 07:40:57,624 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:41:50,549 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 07:41:53,647 basehttp "GET /manage-keys/ HTTP/1.1" 200 1795
+INFO 2024-12-09 07:41:57,547 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:41:57,562 basehttp "GET /manage-keys/ HTTP/1.1" 200 1895
+INFO 2024-12-09 07:42:02,944 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:42:02,973 basehttp "GET /manage-keys/ HTTP/1.1" 200 2158
+INFO 2024-12-09 07:42:08,008 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:42:08,021 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:42:12,941 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:42:12,971 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:42:17,277 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:42:17,314 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:43:34,255 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 07:43:37,609 basehttp "GET /admin/Core/encryptionkey/ HTTP/1.1" 200 12052
+INFO 2024-12-09 07:43:37,646 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:47:46,441 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 07:47:47,449 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:49:22,432 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:49:25,592 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:49:25,611 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:49:34,858 basehttp "GET /manage-keys/ HTTP/1.1" 200 2321
+INFO 2024-12-09 07:49:38,143 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:49:38,162 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:49:41,882 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:49:41,902 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:49:46,110 basehttp "GET /manage-keys/ HTTP/1.1" 200 2321
+INFO 2024-12-09 07:49:48,745 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:49:48,780 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:49:59,070 views Accessed product list view.
+INFO 2024-12-09 07:49:59,082 basehttp "GET /list/ HTTP/1.1" 200 6379
+INFO 2024-12-09 07:50:05,162 views Accessed product creation view.
+INFO 2024-12-09 07:50:05,197 basehttp "GET /create/ HTTP/1.1" 200 5210
+INFO 2024-12-09 07:50:05,271 basehttp "GET /captcha/image/6775178671a095aebe1892f1b6265190cd542802/ HTTP/1.1" 200 3907
+INFO 2024-12-09 07:50:43,322 views Accessed product creation view.
+INFO 2024-12-09 07:50:43,528 views Product created successfully.
+INFO 2024-12-09 07:50:43,530 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:50:43,534 views Accessed product list view.
+INFO 2024-12-09 07:50:43,543 basehttp "GET /list/ HTTP/1.1" 200 6816
+INFO 2024-12-09 07:50:59,143 basehttp "GET /manage-keys/ HTTP/1.1" 200 2321
+INFO 2024-12-09 07:51:02,063 basehttp "POST /manage-keys/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:51:02,080 basehttp "GET /manage-keys/ HTTP/1.1" 200 2421
+INFO 2024-12-09 07:51:05,703 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:51:05,706 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:51:07,970 views Accessed product list view.
+INFO 2024-12-09 07:51:07,979 basehttp "GET /list/ HTTP/1.1" 200 6816
+INFO 2024-12-09 07:51:10,483 views Accessed product creation view.
+INFO 2024-12-09 07:51:10,509 basehttp "GET /create/ HTTP/1.1" 200 5210
+INFO 2024-12-09 07:51:10,541 basehttp "GET /captcha/image/72368823def4ac50d8ed357392d6f22b4be1d959/ HTTP/1.1" 200 3634
+INFO 2024-12-09 07:51:50,060 views Accessed product creation view.
+INFO 2024-12-09 07:51:50,110 views Product created successfully.
+INFO 2024-12-09 07:51:50,112 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 07:51:50,117 views Accessed product list view.
+INFO 2024-12-09 07:51:50,132 basehttp "GET /list/ HTTP/1.1" 200 7250
+INFO 2024-12-09 07:52:02,029 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 07:52:06,599 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 17964
+INFO 2024-12-09 07:52:06,644 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 07:57:32,835 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 07:57:34,050 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:57:50,108 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 07:58:06,396 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 07:58:08,757 views User 'admin' accessed the home page.
+INFO 2024-12-09 07:58:08,776 basehttp "GET / HTTP/1.1" 200 3128
+INFO 2024-12-09 07:58:18,553 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:38:17,490 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 08:38:18,526 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:38:20,511 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:38:21,590 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:38:25,831 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:38:58,573 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 08:38:59,594 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:39:00,640 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:39:02,353 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:40:36,872 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 08:40:37,946 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:40:59,125 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 08:41:00,054 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:43:02,401 views User 'admin' accessed the home page.
+INFO 2024-12-09 08:43:02,458 basehttp "GET / HTTP/1.1" 200 3306
+INFO 2024-12-09 08:43:05,345 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:49:29,589 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:49:31,605 views User 'admin' accessed the home page.
+INFO 2024-12-09 08:49:31,625 basehttp "GET / HTTP/1.1" 200 3306
+ERROR 2024-12-09 08:49:35,834 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 130, in _verify_signature
+    h.verify(data[-32:])
+cryptography.exceptions.InvalidSignature: Signature did not match digest.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 51, in manage_keys
+    "encrypted_key": Fernet(settings.FERNET_MASTER_KEY).decrypt(key.encrypted_key).decode(),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 89, in decrypt
+    return self._decrypt_data(data, timestamp, time_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 148, in _decrypt_data
+    self._verify_signature(data)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 132, in _verify_signature
+    raise InvalidToken
+cryptography.fernet.InvalidToken
+ERROR 2024-12-09 08:49:35,841 basehttp "GET /manage-keys/ HTTP/1.1" 500 95612
+INFO 2024-12-09 08:50:58,564 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-09 08:50:59,271 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-09 08:51:10,871 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 130, in _verify_signature
+    h.verify(data[-32:])
+cryptography.exceptions.InvalidSignature: Signature did not match digest.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 51, in manage_keys
+    "encrypted_key": Fernet(settings.FERNET_MASTER_KEY).decrypt(key.encrypted_key).decode(),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 89, in decrypt
+    return self._decrypt_data(data, timestamp, time_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 148, in _decrypt_data
+    self._verify_signature(data)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 132, in _verify_signature
+    raise InvalidToken
+cryptography.fernet.InvalidToken
+ERROR 2024-12-09 08:51:10,874 basehttp "GET /manage-keys/ HTTP/1.1" 500 95749
+ERROR 2024-12-09 08:51:57,352 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 130, in _verify_signature
+    h.verify(data[-32:])
+cryptography.exceptions.InvalidSignature: Signature did not match digest.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 51, in manage_keys
+    "encrypted_key": Fernet(settings.FERNET_MASTER_KEY).decrypt(key.encrypted_key).decode(),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 89, in decrypt
+    return self._decrypt_data(data, timestamp, time_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 148, in _decrypt_data
+    self._verify_signature(data)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 132, in _verify_signature
+    raise InvalidToken
+cryptography.fernet.InvalidToken
+ERROR 2024-12-09 08:51:57,354 basehttp "GET /manage-keys/ HTTP/1.1" 500 95612
+INFO 2024-12-09 08:53:38,529 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 08:53:39,209 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:53:40,695 basehttp "GET /manage-keys/ HTTP/1.1" 200 508
+INFO 2024-12-09 08:54:10,331 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 08:54:11,031 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 08:58:33,035 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-09 08:58:33,683 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:01:36,487 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 09:01:37,208 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:02:04,727 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:02:39,181 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 09:02:39,853 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:05:55,714 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:05:58,103 views User 'admin' accessed the home page.
+INFO 2024-12-09 09:05:58,115 basehttp "GET / HTTP/1.1" 200 3306
+ERROR 2024-12-09 09:06:02,829 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: Core_encryptionkey.algorithm_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 48, in encryption_keys_view
+    return render(request, 'manage_keys.html', {'keys': keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: Core_encryptionkey.algorithm_name
+ERROR 2024-12-09 09:06:02,838 basehttp "GET /manage-keys/ HTTP/1.1" 500 174190
+INFO 2024-12-09 09:06:35,022 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\admin.py changed, reloading.
+INFO 2024-12-09 09:06:35,740 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:06:39,656 views User 'admin' accessed the home page.
+INFO 2024-12-09 09:06:39,667 basehttp "GET / HTTP/1.1" 200 3306
+ERROR 2024-12-09 09:06:43,068 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: Core_encryptionkey.algorithm_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 48, in encryption_keys_view
+    return render(request, 'manage_keys.html', {'keys': keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: Core_encryptionkey.algorithm_name
+ERROR 2024-12-09 09:06:43,074 basehttp "GET /manage-keys/ HTTP/1.1" 500 174190
+INFO 2024-12-09 09:08:01,199 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:08:04,479 views User 'admin' accessed the home page.
+INFO 2024-12-09 09:08:04,492 basehttp "GET / HTTP/1.1" 200 3306
+INFO 2024-12-09 09:08:18,863 basehttp "GET /admin/ HTTP/1.1" 200 11459
+ERROR 2024-12-09 09:08:22,166 log Internal Server Error: /admin/Core/encryptionkey/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: Core_encryptionkey.algorithm_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\admin\options.py", line 2140, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: Core_encryptionkey.algorithm_name
+ERROR 2024-12-09 09:08:22,172 basehttp "GET /admin/Core/encryptionkey/ HTTP/1.1" 500 180760
+INFO 2024-12-09 09:08:27,112 basehttp "GET /admin/ HTTP/1.1" 200 11459
+INFO 2024-12-09 09:08:28,817 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 17964
+INFO 2024-12-09 09:08:28,840 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 09:08:32,702 basehttp "GET /admin/Core/passwordreset/ HTTP/1.1" 200 8736
+INFO 2024-12-09 09:08:32,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 09:08:35,289 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 12245
+INFO 2024-12-09 09:08:35,304 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 09:08:37,376 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18014
+INFO 2024-12-09 09:08:37,397 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 09:08:54,685 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 09:08:56,690 views User 'admin' accessed the home page.
+INFO 2024-12-09 09:08:56,701 basehttp "GET / HTTP/1.1" 200 3306
+ERROR 2024-12-09 09:08:59,206 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: Core_encryptionkey.algorithm_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 48, in encryption_keys_view
+    return render(request, 'manage_keys.html', {'keys': keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: Core_encryptionkey.algorithm_name
+ERROR 2024-12-09 09:08:59,213 basehttp "GET /manage-keys/ HTTP/1.1" 500 174190
+INFO 2024-12-09 23:15:30,671 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:15:34,687 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-09 23:15:34,736 basehttp "GET /login/?next=/ HTTP/1.1" 200 1212
+INFO 2024-12-09 23:15:34,795 basehttp "GET /static/style.css HTTP/1.1" 304 0
+INFO 2024-12-09 23:15:51,426 views User 'admin' successfully logged in.
+INFO 2024-12-09 23:15:51,438 basehttp "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2024-12-09 23:15:51,449 views User 'admin' accessed the home page.
+INFO 2024-12-09 23:15:51,483 basehttp "GET / HTTP/1.1" 200 3306
+INFO 2024-12-09 23:15:54,625 views Accessed product creation view.
+INFO 2024-12-09 23:15:54,715 basehttp "GET /create/ HTTP/1.1" 200 5388
+INFO 2024-12-09 23:15:54,875 basehttp "GET /captcha/image/0cce4cbc7ab0f8a3a967c411fa2c327b7740f24a/ HTTP/1.1" 200 3765
+INFO 2024-12-09 23:16:28,904 views Accessed product creation view.
+ERROR 2024-12-09 23:16:29,173 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: Core_encryptionkey.algorithm_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 374, in product_create_view
+    form.save()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py", line 52, in save
+    product.set_bank_number(raw_bank_number)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py", line 63, in set_bank_number
+    key_obj = EncryptionKey.objects.get(key_type=self.encryption_type)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: Core_encryptionkey.algorithm_name
+ERROR 2024-12-09 23:16:29,181 basehttp "POST /create/ HTTP/1.1" 500 153940
+INFO 2024-12-09 23:18:02,078 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-09 23:18:03,241 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:18:33,736 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\admin.py changed, reloading.
+INFO 2024-12-09 23:18:34,744 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:19:32,844 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-09 23:19:33,929 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:19:52,243 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 23:19:53,346 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:20:01,367 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 23:20:02,377 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:20:29,266 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 23:20:30,320 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:23:28,090 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:23:39,208 views Accessed product creation view.
+WARNING 2024-12-09 23:23:39,219 views Invalid form data for product creation.
+ERROR 2024-12-09 23:23:39,428 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 379, in product_create_view
+    return render(request, 'invapp/product_form.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'manage_keys' not found. 'manage_keys' is not a valid view function or pattern name.
+ERROR 2024-12-09 23:23:39,434 basehttp "POST /create/ HTTP/1.1" 500 144228
+INFO 2024-12-09 23:23:46,757 views Accessed product creation view.
+WARNING 2024-12-09 23:23:46,761 views Invalid form data for product creation.
+ERROR 2024-12-09 23:23:46,808 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 379, in product_create_view
+    return render(request, 'invapp/product_form.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'manage_keys' not found. 'manage_keys' is not a valid view function or pattern name.
+ERROR 2024-12-09 23:23:46,811 basehttp "POST /create/ HTTP/1.1" 500 144228
+INFO 2024-12-09 23:24:06,990 views Accessed product creation view.
+WARNING 2024-12-09 23:24:06,994 views Invalid form data for product creation.
+ERROR 2024-12-09 23:24:07,060 log Internal Server Error: /create/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 379, in product_create_view
+    return render(request, 'invapp/product_form.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'manage_keys' not found. 'manage_keys' is not a valid view function or pattern name.
+ERROR 2024-12-09 23:24:07,063 basehttp "POST /create/ HTTP/1.1" 500 144228
+INFO 2024-12-09 23:24:54,001 views Accessed product creation view.
+WARNING 2024-12-09 23:24:54,010 views Invalid form data for product creation.
+INFO 2024-12-09 23:24:54,078 basehttp "POST /create/ HTTP/1.1" 200 5396
+INFO 2024-12-09 23:24:54,145 basehttp "GET /captcha/image/07174475e3469904e5ec17e1b061d59947fdb38c/ HTTP/1.1" 200 4061
+INFO 2024-12-09 23:25:06,130 views Accessed product creation view.
+INFO 2024-12-09 23:25:06,248 views Product created successfully.
+INFO 2024-12-09 23:25:06,251 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 23:25:06,257 views Accessed product list view.
+INFO 2024-12-09 23:25:06,293 basehttp "GET /list/ HTTP/1.1" 200 7704
+INFO 2024-12-09 23:25:17,642 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-09 23:25:20,793 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 18251
+INFO 2024-12-09 23:25:20,827 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 23:43:10,850 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:43:12,953 views User 'admin' accessed the home page.
+INFO 2024-12-09 23:43:12,971 basehttp "GET / HTTP/1.1" 200 3145
+WARNING 2024-12-09 23:43:17,528 log Not Found: /manage-keys/
+WARNING 2024-12-09 23:43:17,528 basehttp "GET /manage-keys/ HTTP/1.1" 404 6434
+INFO 2024-12-09 23:46:08,896 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 23:46:09,589 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:46:37,231 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 23:46:37,854 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:47:01,959 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-09 23:47:02,619 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:47:40,896 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:47:55,312 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-09 23:47:55,959 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:47:58,668 views User 'admin' accessed the home page.
+INFO 2024-12-09 23:47:58,682 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-09 23:48:31,064 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 67, in manage_encryption_keys
+    return render(request, 'manage_keys.html', {'existing_keys': existing_keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-12-09 23:48:31,070 basehttp "GET /manage-keys/ HTTP/1.1" 500 142437
+ERROR 2024-12-09 23:48:31,750 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 67, in manage_encryption_keys
+    return render(request, 'manage_keys.html', {'existing_keys': existing_keys})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-12-09 23:48:31,752 basehttp "GET /manage-keys/ HTTP/1.1" 500 142163
+INFO 2024-12-09 23:51:26,048 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 23:51:39,134 basehttp "GET /manage-keys/ HTTP/1.1" 200 3581
+INFO 2024-12-09 23:52:05,017 basehttp "POST /manage-keys/ HTTP/1.1" 200 3669
+INFO 2024-12-09 23:52:30,191 basehttp "POST /manage-keys/ HTTP/1.1" 200 3665
+INFO 2024-12-09 23:52:46,829 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-09 23:52:50,473 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 18251
+INFO 2024-12-09 23:52:50,529 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-09 23:52:53,990 views Accessed product creation view.
+INFO 2024-12-09 23:52:54,167 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-09 23:52:54,343 basehttp "GET /captcha/image/24fdac9309d281ddf7d1dfad55e19ffe3caad401/ HTTP/1.1" 200 5005
+INFO 2024-12-09 23:53:51,754 views Accessed product creation view.
+INFO 2024-12-09 23:53:51,795 views Product created successfully.
+INFO 2024-12-09 23:53:51,796 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 23:53:51,800 views Accessed product list view.
+INFO 2024-12-09 23:53:51,814 basehttp "GET /list/ HTTP/1.1" 200 8137
+INFO 2024-12-09 23:54:11,257 basehttp "GET /manage-keys/ HTTP/1.1" 200 3581
+INFO 2024-12-09 23:54:25,270 basehttp "POST /manage-keys/ HTTP/1.1" 200 3668
+INFO 2024-12-09 23:54:37,721 views Accessed product creation view.
+INFO 2024-12-09 23:54:37,732 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-09 23:54:37,751 basehttp "GET /captcha/image/abb1b3865286bd9a2a1877fe50628235d4326b8d/ HTTP/1.1" 200 3192
+INFO 2024-12-09 23:55:13,599 views Accessed product creation view.
+WARNING 2024-12-09 23:55:13,619 views Invalid form data for product creation.
+INFO 2024-12-09 23:55:13,655 basehttp "POST /create/ HTTP/1.1" 200 5398
+INFO 2024-12-09 23:55:13,693 basehttp "GET /captcha/image/9160723d055c576a20de06854882e303e360373e/ HTTP/1.1" 200 4312
+INFO 2024-12-09 23:55:35,024 views Accessed product creation view.
+INFO 2024-12-09 23:55:35,077 views Product created successfully.
+INFO 2024-12-09 23:55:35,078 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-09 23:55:35,080 views Accessed product list view.
+INFO 2024-12-09 23:55:35,086 basehttp "GET /list/ HTTP/1.1" 200 8574
+INFO 2024-12-09 23:55:41,981 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 19837
+INFO 2024-12-09 23:55:42,001 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 00:01:39,475 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-10 00:01:40,191 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:09:45,848 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:09:46,499 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:12:42,645 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 00:12:43,363 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:15:56,337 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-10 00:15:57,061 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:16:13,217 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-10 00:16:13,969 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:17:24,724 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:17:26,706 views User 'admin' accessed the home page.
+INFO 2024-12-10 00:17:26,718 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 00:17:31,080 basehttp "GET /manage-keys/ HTTP/1.1" 200 3834
+INFO 2024-12-10 00:22:25,452 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\forms.py changed, reloading.
+INFO 2024-12-10 00:22:26,117 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:23:47,582 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:23:48,209 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:24:24,712 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 00:24:25,397 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:24:35,505 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:24:37,425 views User 'admin' accessed the home page.
+INFO 2024-12-10 00:24:37,437 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 00:24:43,791 basehttp "GET /manage-keys/ HTTP/1.1" 200 4040
+INFO 2024-12-10 00:31:15,411 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:31:16,089 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:33:29,601 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:33:30,247 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:33:50,871 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:34:03,559 basehttp "GET /manage-keys/ HTTP/1.1" 200 4040
+INFO 2024-12-10 00:34:10,895 basehttp "POST /manage-keys/ HTTP/1.1" 200 4165
+INFO 2024-12-10 00:34:29,837 views Accessed product creation view.
+INFO 2024-12-10 00:34:29,912 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-10 00:34:29,964 basehttp "GET /captcha/image/9408492987b21351a9ea497a50ada2ff97d52c0d/ HTTP/1.1" 200 4140
+INFO 2024-12-10 00:35:39,501 views Accessed product creation view.
+INFO 2024-12-10 00:35:39,522 views Product created successfully.
+INFO 2024-12-10 00:35:39,523 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-10 00:35:39,526 views Accessed product list view.
+INFO 2024-12-10 00:35:39,537 basehttp "GET /list/ HTTP/1.1" 200 9005
+INFO 2024-12-10 00:35:54,013 views User 'admin' accessed the home page.
+INFO 2024-12-10 00:35:54,015 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 00:35:57,596 basehttp "GET /manage-keys/ HTTP/1.1" 200 4040
+INFO 2024-12-10 00:36:24,071 basehttp "POST /manage-keys/ HTTP/1.1" 200 4124
+INFO 2024-12-10 00:36:55,660 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 20401
+INFO 2024-12-10 00:36:55,686 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 00:37:02,770 views Accessed product creation view.
+INFO 2024-12-10 00:37:02,827 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-10 00:37:02,891 basehttp "GET /captcha/image/1249fe3aca31d892a18a17e6338a39c9ecd1c03a/ HTTP/1.1" 200 4334
+INFO 2024-12-10 00:37:36,467 views Accessed product creation view.
+INFO 2024-12-10 00:37:36,505 views Product created successfully.
+INFO 2024-12-10 00:37:36,507 basehttp "POST /create/ HTTP/1.1" 302 0
+INFO 2024-12-10 00:37:36,509 views Accessed product list view.
+INFO 2024-12-10 00:37:36,515 basehttp "GET /list/ HTTP/1.1" 200 9438
+INFO 2024-12-10 00:37:44,352 basehttp "GET /admin/Core/product/ HTTP/1.1" 200 21022
+INFO 2024-12-10 00:37:44,373 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 00:56:42,545 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 00:56:43,496 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:57:44,375 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:57:45,326 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 00:59:11,201 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 00:59:12,314 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:10:40,150 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:10:41,102 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:11:39,208 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:11:42,275 views User 'admin' accessed the home page.
+INFO 2024-12-10 01:11:42,294 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 01:11:50,476 basehttp "GET /manage-keys/ HTTP/1.1" 200 3575
+INFO 2024-12-10 01:12:01,587 basehttp "POST /manage-keys/ HTTP/1.1" 200 3707
+INFO 2024-12-10 01:12:12,236 basehttp "POST /manage-keys/ HTTP/1.1" 200 3707
+INFO 2024-12-10 01:16:06,169 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:16:07,226 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:16:50,715 views User 'admin' accessed the home page.
+INFO 2024-12-10 01:16:50,736 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-10 01:16:54,985 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 117, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:16:54,993 basehttp "GET /manage-keys/ HTTP/1.1" 500 88409
+ERROR 2024-12-10 01:16:55,484 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 117, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:16:55,487 basehttp "GET /manage-keys/ HTTP/1.1" 500 88135
+INFO 2024-12-10 01:17:17,018 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:17:17,912 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 01:17:18,872 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:17:18,877 basehttp "GET /manage-keys/ HTTP/1.1" 500 88192
+ERROR 2024-12-10 01:17:20,256 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:17:20,259 basehttp "GET /manage-keys/ HTTP/1.1" 500 88192
+ERROR 2024-12-10 01:17:28,525 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:17:28,528 basehttp "GET /manage-keys/ HTTP/1.1" 500 88329
+ERROR 2024-12-10 01:17:29,288 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:17:29,291 basehttp "GET /manage-keys/ HTTP/1.1" 500 88055
+ERROR 2024-12-10 01:19:48,307 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:19:48,309 basehttp "GET /manage-keys/ HTTP/1.1" 500 88192
+ERROR 2024-12-10 01:19:49,355 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:19:49,357 basehttp "GET /manage-keys/ HTTP/1.1" 500 88192
+ERROR 2024-12-10 01:19:50,192 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:19:50,195 basehttp "GET /manage-keys/ HTTP/1.1" 500 88192
+ERROR 2024-12-10 01:19:55,084 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:19:55,086 basehttp "GET /manage-keys/ HTTP/1.1" 500 88329
+ERROR 2024-12-10 01:19:55,943 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 112, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:19:55,945 basehttp "GET /manage-keys/ HTTP/1.1" 500 88055
+INFO 2024-12-10 01:20:38,500 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:20:39,473 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 01:20:40,928 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 106, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decrypt_with_master_key() missing 1 required positional argument: 'master_key'
+ERROR 2024-12-10 01:20:40,936 basehttp "GET /manage-keys/ HTTP/1.1" 500 80363
+ERROR 2024-12-10 01:20:42,340 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 106, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decrypt_with_master_key() missing 1 required positional argument: 'master_key'
+ERROR 2024-12-10 01:20:42,342 basehttp "GET /manage-keys/ HTTP/1.1" 500 80363
+INFO 2024-12-10 01:21:00,350 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:21:01,355 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-10 01:21:02,350 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 91, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'decrypt_with_master_key' is not defined
+ERROR 2024-12-10 01:21:02,360 basehttp "GET /manage-keys/ HTTP/1.1" 500 80183
+ERROR 2024-12-10 01:21:19,115 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 91, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'decrypt_with_master_key' is not defined
+ERROR 2024-12-10 01:21:19,125 basehttp "GET /manage-keys/ HTTP/1.1" 500 80183
+ERROR 2024-12-10 01:21:20,416 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 91, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'decrypt_with_master_key' is not defined
+ERROR 2024-12-10 01:21:20,423 basehttp "GET /manage-keys/ HTTP/1.1" 500 80183
+ERROR 2024-12-10 01:23:08,839 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 91, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'decrypt_with_master_key' is not defined
+ERROR 2024-12-10 01:23:08,852 basehttp "GET /manage-keys/ HTTP/1.1" 500 80183
+INFO 2024-12-10 01:24:02,324 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:24:03,292 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:24:06,591 views User 'admin' accessed the home page.
+INFO 2024-12-10 01:24:06,616 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-10 01:24:10,390 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 106, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decrypt_with_master_key() missing 1 required positional argument: 'master_key'
+ERROR 2024-12-10 01:24:10,394 basehttp "GET /manage-keys/ HTTP/1.1" 500 80500
+ERROR 2024-12-10 01:24:10,797 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 106, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: decrypt_with_master_key() missing 1 required positional argument: 'master_key'
+ERROR 2024-12-10 01:24:10,800 basehttp "GET /manage-keys/ HTTP/1.1" 500 80226
+INFO 2024-12-10 01:24:49,291 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:24:50,298 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:24:55,433 basehttp "GET /manage-keys/ HTTP/1.1" 200 4041
+INFO 2024-12-10 01:25:18,199 basehttp "POST /manage-keys/ HTTP/1.1" 200 4130
+INFO 2024-12-10 01:39:37,119 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:39:38,099 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:43:57,548 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:43:58,522 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:47:37,534 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-10 01:47:38,853 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:49:09,499 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:49:11,683 views User 'admin' accessed the home page.
+INFO 2024-12-10 01:49:11,707 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-10 01:49:15,168 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 75, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY) if settings.FERNET_KEY else '',
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:49:15,172 basehttp "GET /manage-keys/ HTTP/1.1" 500 88127
+ERROR 2024-12-10 01:49:15,920 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 75, in manage_encryption_keys
+    'fernet': decrypt_with_master_key(settings.FERNET_KEY) if settings.FERNET_KEY else '',
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 52, in decrypt_with_master_key
+    fernet = Fernet(master_key)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\cryptography\fernet.py", line 40, in __init__
+    raise ValueError(
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2024-12-10 01:49:15,923 basehttp "GET /manage-keys/ HTTP/1.1" 500 87853
+INFO 2024-12-10 01:50:00,397 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:50:01,474 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:50:24,989 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:50:26,020 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:51:05,402 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 01:51:06,422 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 01:51:26,332 basehttp "GET /manage-keys/ HTTP/1.1" 200 4041
+INFO 2024-12-10 01:51:52,240 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\models.py changed, reloading.
+INFO 2024-12-10 01:51:53,025 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:37:43,083 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:37:45,960 views User 'admin' accessed the home page.
+INFO 2024-12-10 12:37:45,986 basehttp "GET / HTTP/1.1" 200 3145
+WARNING 2024-12-10 12:37:46,577 log Not Found: /favicon.ico
+WARNING 2024-12-10 12:37:46,578 basehttp "GET /favicon.ico HTTP/1.1" 404 6696
+INFO 2024-12-10 12:37:51,290 basehttp "GET /manage-keys/ HTTP/1.1" 200 4041
+INFO 2024-12-10 12:39:52,768 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 12:39:57,125 views User 'admin' accessed the home page.
+INFO 2024-12-10 12:39:57,147 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 12:46:53,928 views Accessed product creation view.
+INFO 2024-12-10 12:46:54,046 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-10 12:46:54,182 basehttp "GET /captcha/image/f28ab8cc62b3cbee81404481c54573261fc6a233/ HTTP/1.1" 200 4060
+INFO 2024-12-10 12:59:50,903 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 12:59:52,328 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:00:39,665 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 13:00:40,718 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:02:37,319 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 13:02:38,244 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:02:41,434 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:02:41,492 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-10 13:02:45,029 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 74, in manage_encryption_keys
+    existing_keys = {key: encrypt_with_master_key(settings.AES_KEYS.get(key, '')) for key in settings.AES_KEYS}
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 45, in encrypt_with_master_key
+    encrypted_data = fernet.encrypt(data.encode())
+                                    ^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'encode'. Did you mean: 'decode'?
+ERROR 2024-12-10 13:02:45,034 basehttp "GET /manage-keys/ HTTP/1.1" 500 84513
+ERROR 2024-12-10 13:02:45,536 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 74, in manage_encryption_keys
+    existing_keys = {key: encrypt_with_master_key(settings.AES_KEYS.get(key, '')) for key in settings.AES_KEYS}
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 45, in encrypt_with_master_key
+    encrypted_data = fernet.encrypt(data.encode())
+                                    ^^^^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'encode'. Did you mean: 'decode'?
+ERROR 2024-12-10 13:02:45,548 basehttp "GET /manage-keys/ HTTP/1.1" 500 84239
+INFO 2024-12-10 13:06:09,360 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:06:10,288 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:08:57,059 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 13:08:57,989 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:11:10,282 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:11:11,321 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:11:35,470 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:11:38,131 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:11:38,154 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:11:42,109 basehttp "GET /manage-keys/ HTTP/1.1" 200 4422
+INFO 2024-12-10 13:12:25,298 basehttp "POST /manage-keys/ HTTP/1.1" 200 4546
+INFO 2024-12-10 13:12:40,760 basehttp "POST /manage-keys/ HTTP/1.1" 200 4546
+INFO 2024-12-10 13:12:47,076 basehttp "POST /manage-keys/ HTTP/1.1" 200 4546
+INFO 2024-12-10 13:14:54,986 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:14:56,132 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:14:59,707 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:14:59,725 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:15:02,908 basehttp "GET /manage-keys/ HTTP/1.1" 200 4422
+INFO 2024-12-10 13:15:30,513 basehttp "POST /manage-keys/ HTTP/1.1" 200 4574
+INFO 2024-12-10 13:20:48,100 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:20:49,025 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:21:08,956 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:21:10,018 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:22:47,160 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:22:47,181 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:22:53,258 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-10 13:22:54,748 basehttp "GET /manage-keys/ HTTP/1.1" 200 3913
+INFO 2024-12-10 13:23:11,116 basehttp "POST /manage-keys/ HTTP/1.1" 200 4029
+INFO 2024-12-10 13:23:21,411 basehttp "POST /manage-keys/ HTTP/1.1" 200 4029
+INFO 2024-12-10 13:23:27,843 basehttp "POST /manage-keys/ HTTP/1.1" 200 4029
+INFO 2024-12-10 13:23:29,270 basehttp "POST /manage-keys/ HTTP/1.1" 200 4029
+INFO 2024-12-10 13:23:30,411 basehttp "POST /manage-keys/ HTTP/1.1" 200 4029
+INFO 2024-12-10 13:23:35,962 basehttp "POST /manage-keys/ HTTP/1.1" 200 4020
+INFO 2024-12-10 13:23:58,672 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:23:59,576 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:24:02,238 basehttp "POST /manage-keys/ HTTP/1.1" 200 4481
+INFO 2024-12-10 13:24:19,315 basehttp "POST /manage-keys/ HTTP/1.1" 200 4490
+INFO 2024-12-10 13:24:28,349 basehttp "POST /manage-keys/ HTTP/1.1" 200 4574
+INFO 2024-12-10 13:29:34,121 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:29:34,857 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:29:44,052 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:29:44,067 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:29:47,606 basehttp "GET /manage-keys/ HTTP/1.1" 200 4422
+INFO 2024-12-10 13:29:54,995 basehttp "POST /manage-keys/ HTTP/1.1" 200 4574
+INFO 2024-12-10 13:30:12,815 basehttp "POST /manage-keys/ HTTP/1.1" 200 4574
+INFO 2024-12-10 13:30:29,974 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-10 13:30:34,476 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-10 13:31:27,452 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:31:28,159 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:33:30,440 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:33:32,416 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:33:33,085 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:33:34,823 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:33:34,836 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:33:37,789 basehttp "GET /manage-keys/ HTTP/1.1" 200 4422
+INFO 2024-12-10 13:33:43,641 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:34:15,254 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:38:21,032 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:38:21,735 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:38:31,834 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:38:35,643 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:38:40,851 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:38:47,381 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:38:49,903 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:38:49,913 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:38:53,322 basehttp "GET /manage-keys/ HTTP/1.1" 200 4422
+INFO 2024-12-10 13:38:58,594 basehttp "POST /manage-keys/ HTTP/1.1" 200 4566
+INFO 2024-12-10 13:39:45,387 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 13:39:46,044 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:39:48,008 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:39:48,022 basehttp "GET / HTTP/1.1" 200 3145
+INFO 2024-12-10 13:39:51,304 basehttp "GET /manage-keys/ HTTP/1.1" 200 4162
+INFO 2024-12-10 13:39:57,361 basehttp "POST /manage-keys/ HTTP/1.1" 200 4278
+INFO 2024-12-10 13:40:07,857 basehttp "POST /manage-keys/ HTTP/1.1" 200 4278
+INFO 2024-12-10 13:46:33,979 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:46:36,200 views User 'admin' accessed the home page.
+INFO 2024-12-10 13:46:36,211 basehttp "GET / HTTP/1.1" 200 3145
+ERROR 2024-12-10 13:46:39,348 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 76, in manage_encryption_keys
+    existing_keys = {key: settings.AES_KEYS.get(key) for key in settings.AES_KEYS}
+                                                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\conf\__init__.py", line 83, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'AES_KEYS'
+ERROR 2024-12-10 13:46:39,353 basehttp "GET /manage-keys/ HTTP/1.1" 500 84485
+ERROR 2024-12-10 13:46:39,901 log Internal Server Error: /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py", line 76, in manage_encryption_keys
+    existing_keys = {key: settings.AES_KEYS.get(key) for key in settings.AES_KEYS}
+                                                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\conf\__init__.py", line 83, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'AES_KEYS'
+ERROR 2024-12-10 13:46:39,903 basehttp "GET /manage-keys/ HTTP/1.1" 500 84211
+INFO 2024-12-10 13:47:15,304 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\AuthenticationProject\settings.py changed, reloading.
+INFO 2024-12-10 13:47:15,983 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 13:47:18,344 basehttp "GET /manage-keys/ HTTP/1.1" 200 4228
+INFO 2024-12-10 14:20:04,549 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:20:04,568 basehttp "GET /logs/ HTTP/1.1" 200 37417
+INFO 2024-12-10 14:20:08,732 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 11167
+INFO 2024-12-10 14:20:13,132 views Accessed product list view.
+INFO 2024-12-10 14:20:13,174 basehttp "GET /list/ HTTP/1.1" 200 9438
+INFO 2024-12-10 14:20:14,192 views Accessed product creation view.
+INFO 2024-12-10 14:20:14,347 basehttp "GET /create/ HTTP/1.1" 200 5227
+INFO 2024-12-10 14:20:14,426 basehttp "GET /captcha/image/3c5534781865c0f6e83bab6a734725d4b1d2109b/ HTTP/1.1" 200 4332
+INFO 2024-12-10 14:21:55,876 basehttp "POST /manage-keys/ HTTP/1.1" 200 4490
+INFO 2024-12-10 14:21:57,628 basehttp "GET /manage-keys/ HTTP/1.1" 200 4406
+INFO 2024-12-10 14:21:59,664 basehttp "GET /manage-keys/ HTTP/1.1" 200 4406
+INFO 2024-12-10 14:25:54,706 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 14:25:55,659 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:26:28,622 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-10 14:26:29,261 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:26:47,222 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\urls.py changed, reloading.
+INFO 2024-12-10 14:26:48,051 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:29:24,470 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:29:25,777 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:29:25,858 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:29:25,879 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:29:25,883 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:29:25,935 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 11644
+INFO 2024-12-10 14:29:47,447 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:29:49,290 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:29:49,304 basehttp "GET / HTTP/1.1" 200 3511
+INFO 2024-12-10 14:29:51,383 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:29:51,469 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:29:51,482 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:29:51,486 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:29:51,523 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 11922
+INFO 2024-12-10 14:33:27,848 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:33:27,952 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:33:27,985 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 11524
+INFO 2024-12-10 14:33:27,990 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:33:27,993 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:33:28,973 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:33:29,048 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:33:29,063 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:33:29,065 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:33:29,099 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 12321
+INFO 2024-12-10 14:33:40,187 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:33:42,030 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:33:42,042 basehttp "GET / HTTP/1.1" 200 3511
+INFO 2024-12-10 14:33:43,883 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:33:43,961 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:33:43,982 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:33:44,011 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:33:44,017 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 12143
+INFO 2024-12-10 14:33:53,410 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:33:53,475 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:33:53,514 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 12718
+INFO 2024-12-10 14:33:53,520 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:33:53,522 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:33:54,172 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:33:54,238 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:33:54,283 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 13293
+INFO 2024-12-10 14:33:54,289 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:33:54,291 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:34:27,535 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:34:27,543 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:34:28,915 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:37,681 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 13853
+INFO 2024-12-10 14:34:41,224 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:42,761 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:44,390 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:34:44,393 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:34:47,773 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:49,880 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:51,479 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:34:51,636 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:34:51,679 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 14892
+INFO 2024-12-10 14:34:51,681 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:34:51,683 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:34:53,965 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 15231
+INFO 2024-12-10 14:34:56,218 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:35:30,996 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:36:01,426 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:36:02,851 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:36:02,853 basehttp "GET /logs/ HTTP/1.1" 200 37783
+INFO 2024-12-10 14:36:04,656 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 15918
+INFO 2024-12-10 14:36:06,064 views User 'admin' logged out.
+INFO 2024-12-10 14:36:06,072 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:36:06,092 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-10 14:36:16,679 views User 'admin' successfully logged in.
+INFO 2024-12-10 14:36:16,687 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:36:16,694 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:36:16,696 basehttp "GET / HTTP/1.1" 200 3511
+INFO 2024-12-10 14:36:18,786 views User 'admin' logged out.
+INFO 2024-12-10 14:36:18,844 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:36:18,857 basehttp "GET /login/ HTTP/1.1" 200 1212
+WARNING 2024-12-10 14:36:27,402 views Login failed: Invalid credentials for username 'asma'.
+INFO 2024-12-10 14:36:27,403 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:36:27,406 basehttp "GET /login/ HTTP/1.1" 200 1367
+INFO 2024-12-10 14:36:35,768 views User 'admin' successfully logged in.
+INFO 2024-12-10 14:36:35,787 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:36:35,811 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:36:35,817 basehttp "GET / HTTP/1.1" 200 3511
+INFO 2024-12-10 14:37:05,257 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 17761
+INFO 2024-12-10 14:37:07,374 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:15,882 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:37:15,884 basehttp "GET /logs/ HTTP/1.1" 200 37959
+INFO 2024-12-10 14:37:17,158 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:37:17,242 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:17,285 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:37:17,285 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 18452
+INFO 2024-12-10 14:37:17,290 basehttp "GET /logs/ HTTP/1.1" 200 37959
+INFO 2024-12-10 14:37:19,672 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:23,479 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:26,164 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4690
+INFO 2024-12-10 14:37:26,273 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:26,276 basehttp - Broken pipe from ('127.0.0.1', 55971)
+INFO 2024-12-10 14:37:26,276 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 19143
+INFO 2024-12-10 14:37:26,293 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:37:26,295 basehttp "GET /logs/ HTTP/1.1" 200 37959
+INFO 2024-12-10 14:37:29,141 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 19716
+INFO 2024-12-10 14:37:30,169 basehttp "GET /manage-keys/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:37:53,984 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:40:43,885 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:40:45,373 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:40:48,516 views User 'admin'Accessed to Logs Page  .
+INFO 2024-12-10 14:40:48,519 basehttp "GET /logs/ HTTP/1.1" 200 37959
+INFO 2024-12-10 14:40:49,428 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:40:50,522 basehttp "GET /logsfiltrer/ HTTP/1.1" 200 18569
+INFO 2024-12-10 14:40:51,412 views User 'admin' logged out.
+INFO 2024-12-10 14:40:51,474 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:40:51,491 basehttp "GET /login/ HTTP/1.1" 200 1212
+INFO 2024-12-10 14:41:34,752 views User 'admin' successfully logged in.
+INFO 2024-12-10 14:41:34,760 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:41:34,767 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:41:34,768 basehttp "GET / HTTP/1.1" 200 3511
+INFO 2024-12-10 14:41:37,145 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4543
+INFO 2024-12-10 14:41:38,940 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:42:44,804 basehttp "GET /manage-keys/ HTTP/1.1" 200 4594
+INFO 2024-12-10 14:44:34,150 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+INFO 2024-12-10 14:44:36,432 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+INFO 2024-12-10 14:44:38,102 views Accessed product list view.
+INFO 2024-12-10 14:44:38,130 basehttp "GET /list/ HTTP/1.1" 200 9262
+INFO 2024-12-10 14:44:43,802 views User 'admin' logged out.
+INFO 2024-12-10 14:44:43,860 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:44:43,875 basehttp "GET /login/ HTTP/1.1" 200 1212
+WARNING 2024-12-10 14:44:56,279 views Login failed: Invalid credentials for username 'douda'.
+INFO 2024-12-10 14:44:56,280 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:44:56,284 basehttp "GET /login/ HTTP/1.1" 200 1367
+WARNING 2024-12-10 14:45:14,010 views Login failed: Invalid credentials for username 'douda'.
+INFO 2024-12-10 14:45:14,011 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:45:14,017 basehttp "GET /login/ HTTP/1.1" 200 1367
+INFO 2024-12-10 14:45:19,245 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:45:19,344 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-10 14:45:19,361 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:19,361 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:19,362 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:19,631 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:19,632 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:19,677 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:27,835 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:45:27,867 basehttp "GET /admin/ HTTP/1.1" 200 10825
+INFO 2024-12-10 14:45:27,883 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:27,929 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:27,930 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:30,799 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 17561
+INFO 2024-12-10 14:45:30,861 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:30,869 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:45:33,884 basehttp "GET /admin/auth/user/add/ HTTP/1.1" 200 12852
+INFO 2024-12-10 14:45:33,902 basehttp "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:33,905 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:45:33,948 basehttp "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 304 0
+INFO 2024-12-10 14:45:55,440 basehttp "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:45:55,505 basehttp "GET /admin/auth/user/22/change/ HTTP/1.1" 200 25099
+INFO 2024-12-10 14:45:55,528 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:46:05,020 views User 'admin' accessed the home page.
+INFO 2024-12-10 14:46:05,022 basehttp "GET / HTTP/1.1" 200 2969
+INFO 2024-12-10 14:46:07,803 views User 'admin' logged out.
+INFO 2024-12-10 14:46:07,822 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:46:07,836 basehttp "GET /login/ HTTP/1.1" 200 1212
+WARNING 2024-12-10 14:46:27,031 views Login failed: Invalid credentials for username 'asoum'.
+INFO 2024-12-10 14:46:27,032 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:46:27,036 basehttp "GET /login/ HTTP/1.1" 200 1367
+INFO 2024-12-10 14:46:43,848 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:46:43,855 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2024-12-10 14:46:53,898 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:46:53,908 basehttp "GET /admin/ HTTP/1.1" 200 10804
+INFO 2024-12-10 14:46:55,681 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18003
+INFO 2024-12-10 14:46:55,699 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:47:07,440 basehttp "POST /admin/auth/user/ HTTP/1.1" 200 8300
+INFO 2024-12-10 14:47:07,483 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2024-12-10 14:47:09,024 basehttp "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:47:09,103 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 17660
+INFO 2024-12-10 14:47:09,129 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-10 14:47:11,622 basehttp "GET /register/ HTTP/1.1" 200 1764
+INFO 2024-12-10 14:47:44,085 views New user registered: Username 'farah123', Email 'asmabenhamouda08@gmail.com'.
+INFO 2024-12-10 14:47:46,086 basehttp "POST /register/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:47:46,147 basehttp "GET /check_email/ HTTP/1.1" 200 550
+INFO 2024-12-10 14:47:59,477 basehttp "GET /activate/MjM/chtqfk-1d131bb9a3a618c7e4b0fc524a7ba217/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:47:59,489 basehttp "GET /login/ HTTP/1.1" 200 1369
+INFO 2024-12-10 14:48:16,055 views User 'farah123' successfully logged in.
+INFO 2024-12-10 14:48:16,063 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:48:16,070 views User 'farah123' accessed the home page.
+INFO 2024-12-10 14:48:16,071 basehttp "GET / HTTP/1.1" 200 2969
+INFO 2024-12-10 14:48:18,119 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+INFO 2024-12-10 14:48:19,571 views User 'farah123' Try to access to Logs Page  .
+INFO 2024-12-10 14:48:19,571 views User 'farah123' accessed the to the denied page.
+INFO 2024-12-10 14:48:19,598 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-10 14:48:21,812 views User 'farah123' accessed the home page.
+INFO 2024-12-10 14:48:21,816 basehttp "GET / HTTP/1.1" 200 2969
+INFO 2024-12-10 14:48:23,529 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+WARNING 2024-12-10 14:48:24,737 log Forbidden (Permission denied): /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 57, in _view_wrapper
+    test_pass = test_func(request.user)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 130, in check_perms
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+WARNING 2024-12-10 14:48:24,772 basehttp "GET /manage-keys/ HTTP/1.1" 403 135
+INFO 2024-12-10 14:48:29,457 basehttp "GET /logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:48:29,468 basehttp "GET /admin/login/?next=/logsfiltrer/ HTTP/1.1" 200 3840
+WARNING 2024-12-10 14:48:42,433 log Forbidden (Permission denied): /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 57, in _view_wrapper
+    test_pass = test_func(request.user)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 130, in check_perms
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+WARNING 2024-12-10 14:48:42,438 basehttp "GET /manage-keys/ HTTP/1.1" 403 135
+INFO 2024-12-10 14:48:46,364 basehttp "GET /logsfiltrer/ HTTP/1.1" 302 0
+INFO 2024-12-10 14:48:46,403 basehttp "GET /admin/login/?next=/logsfiltrer/ HTTP/1.1" 200 3689
+INFO 2024-12-10 14:48:51,406 views User 'farah123' Try to access to Logs Page  .
+INFO 2024-12-10 14:48:51,407 views User 'farah123' accessed the to the denied page.
+INFO 2024-12-10 14:48:51,410 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-10 14:51:18,953 views User 'farah123' Try to access to Logs Page  .
+INFO 2024-12-10 14:51:18,955 views User 'farah123' accessed the to the denied page.
+INFO 2024-12-10 14:51:18,959 basehttp "GET /logs/ HTTP/1.1" 200 601
+INFO 2024-12-10 14:51:20,571 views User 'farah123' accessed the home page.
+INFO 2024-12-10 14:51:20,575 basehttp "GET / HTTP/1.1" 200 2969
+INFO 2024-12-10 14:51:22,717 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+WARNING 2024-12-10 14:51:24,331 log Forbidden (Permission denied): /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 57, in _view_wrapper
+    test_pass = test_func(request.user)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 130, in check_perms
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+WARNING 2024-12-10 14:51:24,336 basehttp "GET /manage-keys/ HTTP/1.1" 403 135
+INFO 2024-12-10 14:52:43,550 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 14:52:44,278 autoreload Watching for file changes with StatReloader
+INFO 2024-12-10 14:53:54,015 basehttp "GET /admin-dashboard/ HTTP/1.1" 200 4001
+WARNING 2024-12-10 14:53:55,162 log Forbidden (Permission denied): /manage-keys/
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 57, in _view_wrapper
+    test_pass = test_func(request.user)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\env\Lib\site-packages\django\contrib\auth\decorators.py", line 130, in check_perms
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+WARNING 2024-12-10 14:53:55,165 basehttp "GET /manage-keys/ HTTP/1.1" 403 135
+INFO 2024-12-10 14:54:06,353 autoreload C:\Users\USER\Desktop\ISAMM\msibet hyaty 5\web_project\AuthenticationProject\Core\views.py changed, reloading.
+INFO 2024-12-10 14:54:07,005 autoreload Watching for file changes with StatReloader

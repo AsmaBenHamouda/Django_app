@@ -3,10 +3,14 @@ from django.contrib.auth.models import User
 import uuid
 from cryptography.fernet import Fernet
 from django.conf import settings
+from .models import *
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+
 
 
 
 # Create your models here.
+
 class PasswordReset(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     reset_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
@@ -37,6 +41,8 @@ class Product(models.Model):
         default='fernet'
     )
     
+
+    
     class Meta:
         permissions = [
             ("can_create_product", "Can create product"),
@@ -45,14 +51,19 @@ class Product(models.Model):
             ('can_view_product', 'Can view product'),
             ("can_view_own_products", "Can view own products"),
             ("can_view_all_products", "Can view all products"),
+            ("can_view_product_keys", "Can view and update encryption keys"),
+            
         ]
     def __str__(self):
         return self.name
+    
 
     def set_bank_number(self, raw_number):
         """Encrypt and set the bank number."""
         fernet = Fernet(settings.FERNET_KEY)
         self.bank_number = fernet.encrypt(raw_number.encode())
+    
+    
 
     def get_bank_number(self):
         """Decrypt and get the bank number."""
@@ -65,3 +76,7 @@ class Product(models.Model):
         """Display the encrypted bank number (hexadecimal or Base64 for readability)."""
         if self.bank_number:
             return self.bank_number.hex()  # Or use Base64 for cleaner output.
+
+class EncryptedKey(models.Model):
+    key_type = models.CharField(max_length=50, unique=True)
+    encrypted_key = models.TextField()

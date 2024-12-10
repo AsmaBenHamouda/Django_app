@@ -1,0 +1,47 @@
+{% extends "invapp/layout.html" %}
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Admin Dashboard</h2>
+    
+    <div class="row">
+        <!-- Card for Logs -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Logs</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">View system logs</p>
+                    <a href="{% url 'admin_logs' %}" class="btn btn-primary">Go to Logs</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card for Key Vault -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Key Vault</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Manage encryption keys</p>
+                    <a href="{% url 'manage_keys' %}" class="btn btn-primary">Go to Key Vault</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Logs Filter -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Logs Filter</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Filter logs by criteria</p>
+                    <a href="{% url 'logs_view' %}" class="btn btn-primary">Go to Logs Filter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import *
+
 from django.contrib.auth.admin import UserAdmin
 # Register your models here.
 admin.site.unregister(User)
@@ -9,7 +10,7 @@ admin.site.register(PasswordReset)
 class ProductAdmin(admin.ModelAdmin):
     
     list_display = ('name', 'sku', 'price', 'quantity', 'supplier', 'encryption_type', 'created_by','get_encrypted_bank_number')
-    readonly_fields = ('display_encrypted_bank_number',)
+    #readonly_fields = ('display_encrypted_bank_number',)
     list_filter = ('created_by', 'supplier')
     search_fields = ('name', 'sku')
     
@@ -35,4 +36,4 @@ class ProductAdmin(admin.ModelAdmin):
         if not obj.created_by:
             obj.created_by = request.user
         super().save_model(request, obj, form, change)
-    
+

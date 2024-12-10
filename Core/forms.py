@@ -1,7 +1,10 @@
 from django import forms
 from .models import Product
 from captcha.fields import CaptchaField
-
+from .models import *
+from django.conf import settings
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad
 class ProductForm(forms.ModelForm):
     ENCRYPTION_CHOICES = Product.ENCRYPTION_CHOICES
     encryption_type = forms.ChoiceField(
@@ -45,8 +48,9 @@ class ProductForm(forms.ModelForm):
     def save(self, commit=True):
         """Override the save method to handle encryption of the bank number."""
         product = super().save(commit=False)  # Create an instance without saving it yet
-        raw_bank_number = self.cleaned_data.get('bank_number') 
-        encryption_type = self.cleaned_data.get('encryption_type') # Get raw input
+        raw_bank_number = self.cleaned_data.get('bank_number')
+        encryption_type = self.cleaned_data.get('encryption_type')
+
         if raw_bank_number:
             if encryption_type == 'fernet':
                 product.set_bank_number(raw_bank_number)
@@ -54,15 +58,35 @@ class ProductForm(forms.ModelForm):
                 product.bank_number = self.encrypt_caesar(raw_bank_number)
             elif encryption_type.startswith('aes'):
                 try:
-                    key_size = int(encryption_type[3:])
-                    product.bank_number = self.encrypt_aes(raw_bank_number, key_size)
-                except ValueError:
-                    raise ValueError(f"Invalid AES key size: {encryption_type}")
+                    key_size = int(encryption_type[3:])  # Get the key size from the encryption type
+                    # Fetch the AES key from settings
+                    aes_key = settings.AES_KEYS.get(f'aes{key_size}', None)
+                    if aes_key:
+                        # Encrypt the bank number using AES
+                        product.bank_number = self.encrypt_aes(raw_bank_number, key_size, aes_key)
+                    else:
+                        raise ValueError(f"AES key for {encryption_type} not found")
+                except ValueError as ve:
+                    raise ValueError(f"Invalid AES key size: {encryption_type}") from ve
 
-        product.encryption_type = encryption_type
+        product.encryption_type = encryption_type  # Set the encryption type
         if commit:
             product.save()  # Save the instance to the database
         return product
+
+    def encrypt_caesar(self, text, shift=3):
+        """Encrypt using Caesar cipher."""
+        encrypted_text = ''.join(
+            [chr((ord(char) - 32 + shift) % 95 + 32) if ' ' <= char <= '~' else char for char in text]
+        )
+        return encrypted_text
+    def encrypt_aes(self, text, key_size, aes_key):
+        """Encrypt using AES with the specified key size."""
+        if len(aes_key) != key_size // 8:  # Ensure the key length matches the specified size
+            raise ValueError(f"Invalid AES key size: {len(aes_key)}. Expected {key_size // 8} bytes.")
+        cipher = AES.new(aes_key, AES.MODE_ECB)  # Use AES in ECB mode
+        return cipher.encrypt(pad(text.encode(), AES.block_size))  # Pad the text and encrypt it
+
     def encrypt_caesar(self, text, shift=3):
         """Encrypt using Caesar cipher."""
         encrypted = ''.join(
@@ -71,22 +95,3 @@ class ProductForm(forms.ModelForm):
             for char in text
         )
         return encrypted.encode()
-
-    def encrypt_aes(self, text, key_size):
-        """Encrypt using AES with the specified key size."""
-        from Crypto.Cipher import AES
-        from Crypto.Util.Padding import pad
-        key_size_map = {
-            128: 16,  # AES 128
-            192: 24,  # AES 192
-            256: 32   # AES 256
-        }
-        # Get the correct key size in bytes
-        if key_size not in key_size_map:
-            raise ValueError(f"Invalid AES key size: {key_size}")
-        
-         # AES key in bytes
-        key = b'ASMAASMAASMAASMA'[:key_size_map[key_size]]  # Ensure correct key size
-        cipher = AES.new(key, AES.MODE_ECB)
-        cipher = AES.new(key, AES.MODE_ECB)
-        return cipher.encrypt(pad(text.encode(), AES.block_size))

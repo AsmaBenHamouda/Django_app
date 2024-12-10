@@ -35,13 +35,91 @@ from django.utils.encoding import force_bytes
 from datetime import datetime, timedelta
 from django.contrib.admin.views.decorators import staff_member_required
 from django.shortcuts import render
+import os
+from django.contrib.auth.decorators import login_required, permission_required
+import base64
+from cryptography.fernet import Fernet
+@login_required
+def admin_dashboard_view(request):
+    """View for displaying the combined admin dashboard with logs, key vault, and logs filter."""
+    # If you want to add any specific logic to pass context data, do it here.
+    return render(request, 'admin_dashboard.html')
+def encrypt_with_master_key(data):
+    """Encrypt data using the master key."""
+    master_key = settings.MASTER_KEY.encode()
+    fernet = Fernet(master_key)
+    encrypted_data = fernet.encrypt(data.encode())
+    return encrypted_data
 
-@staff_member_required  # Limite l'accès aux administrateurs
+def decrypt_with_master_key(encrypted_data):
+    """Decrypt data using the master key."""
+    master_key = settings.MASTER_KEY.encode()
+    fernet = Fernet(master_key)
+    decrypted_data = fernet.decrypt(encrypted_data).decode()
+    return decrypted_data
+
+def validate_aes_key(key, key_size):
+    """Validate the AES key based on the selected key size."""
+    # Check if the key length matches the required size
+    if key_size == 128 and len(key) != 16:
+        raise ValidationError("AES-128 key must be 16 bytes long.")
+    elif key_size == 192 and len(key) != 24:
+        raise ValidationError("AES-192 key must be 24 bytes long.")
+    elif key_size == 256 and len(key) != 32:
+        raise ValidationError("AES-256 key must be 32 bytes long.")
+    
+    # Optionally, check if the key is Base64 encoded (if you're using that format)
+    try:
+        base64.b64decode(key)
+    except Exception:
+        raise ValidationError("Invalid Base64 encoding for AES key.")
+@login_required
+@permission_required('Core.can_view_product_keys', raise_exception=True)
+def manage_encryption_keys(request): 
+    existing_keys = {key: settings.AES_KEYS.get(key) for key in settings.AES_KEYS}
+
+    """View to manage encryption keys."""
+    if request.method == "POST":
+        # Handle form submission to update encryption keys
+        key_type = request.POST.get('key_type')
+        new_key = request.POST.get('new_key')
+        
+        if key_type and new_key:
+            try:
+                if key_type == 'fernet':
+                    settings.FERNET_KEY = new_key.encode()
+                elif key_type == 'caesar':
+                    settings.AES_KEYS[key_type] = new_key  # Update Fernet key
+                elif key_type.startswith('aes'):
+                    # Get the AES key size from the selected encryption type (AES128, AES192, AES256)
+                    key_size = int(key_type[3:])
+                    # Validate the AES key before updating
+                    validate_aes_key(new_key, key_size)
+                    # Ensure it's AES128, AES192, or AES256 key
+                    # Store the AES key (can be in Base64 or raw format)
+                    settings.AES_KEYS[key_type] = new_key.encode()
+                else:
+                    settings.AES_KEYS[key_type] = new_key.encode()  # Store AES keys based on type
+                messages.success(request, 'Key updated successfully.')
+            except Exception as e:
+                messages.error(request, f'Error updating key: {e}')
+        
+    # Fetch existing keys
+    existing_keys = {
+        'fernet': settings.FERNET_KEY,
+        'aes128': settings.AES_KEYS.get('aes128', ''),
+        'aes192': settings.AES_KEYS.get('aes192', ''),
+        'aes256': settings.AES_KEYS.get('aes256', ''),
+    }
+    
+    return render(request, 'manage_keys.html', {'existing_keys': existing_keys})
+
+@staff_member_required  
 def logs_view_admin(request):
-    log_file_path = 'actions.log'  # Chemin du fichier de logs
+    log_file_path = 'actions.log'  
     logs = []
 
-    # Lecture des logs
+    
     try:
         with open(log_file_path, 'r') as file:
             for line in file:
@@ -49,19 +127,19 @@ def logs_view_admin(request):
     except FileNotFoundError:
         logs = ["Le fichier actions.log n'existe pas."]
 
-    # Récupération des filtres (paramètres GET)
-    level = request.GET.get('level', 'INFO')  # Par défaut, niveau INFO
-    minutes = int(request.GET.get('minutes', 60))  # Période par défaut : 60 minutes
+    
+    level = request.GET.get('level', 'INFO')  
+    minutes = int(request.GET.get('minutes', 60))  
 
-    # Filtrage des logs
+    
     filtered_logs = []
     now = datetime.now()
     time_threshold = now - timedelta(minutes=minutes)
 
     for log in logs:
         try:
-            # Extraction des informations du log (date, niveau, message)
-            parts = log.split(' ', 3)  # Extrait niveau, timestamp, et message
+            
+            parts = log.split(' ', 3)  
             log_level = parts[0]
             timestamp = parts[1] + " " + parts[2]
             log_time = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S,%f')
@@ -69,9 +147,9 @@ def logs_view_admin(request):
             if log_level == level and log_time >= time_threshold:
                 filtered_logs.append(log)
         except (ValueError, IndexError):
-            continue  # Ignore les lignes mal formatées
+            continue  
 
-    # Envoi des données au template
+    
     context = {
         'logs': filtered_logs,
         'level': level,
@@ -92,29 +170,29 @@ def activate_user(request, uid, token):
         user = None
 
     if user is not None and default_token_generator.check_token(user, token):
-        user.is_active = True  # Set user as active
+        user.is_active = True  
         user.save()
-        return redirect('login')  # Redirect to login page or a success page
+        return redirect('login')  
     else:
-        return render(request, 'activation_failed.html')  # Activation failed page
+        return render(request, 'activation_failed.html')  
 def send_confirmation_email(user, request):
     """
     Sends a confirmation email to the user after registration.
     """
-    # Generate token for email confirmation
+   
     token = default_token_generator.make_token(user)
     
-    # Encode the user ID to create the UID part of the URL
+   
     uid = urlsafe_base64_encode(force_bytes(user.pk))
 
-    # Get the domain for the email confirmation link
+    
     current_site = get_current_site(request)
     
-    # Subject of the email
+   
     mail_subject = 'Activate Your Account'
 
     html_message = render_to_string(
-        'activation_email.html',  # Template for email body
+        'activation_email.html',  
         {
             'user': user,
             'domain': current_site.domain,
@@ -123,27 +201,27 @@ def send_confirmation_email(user, request):
         }
     )
 
-    # Render the email body using a template
+    
     plain_message = f"Hello {user.first_name}!\n\nThank you for registering on our website. To complete your registration, please click the link below to activate your account:\n\nhttp://{current_site.domain}/activate/{uid}/{token}/\n\nIf you did not make this request, please ignore this email."
 
-    # Send the email
+   
     send_mail(
         mail_subject,
         plain_message,
-        settings.DEFAULT_FROM_EMAIL,  # From email address (e.g., 'webmaster@localhost')
+        settings.DEFAULT_FROM_EMAIL,  
         [user.email],
         html_message=html_message
-            # Recipient email address
+           
     )
 
 @login_required
 def admin_logs_view(request):
     if not request.user.groups.filter(name='Admin Access').exists():
-        # If not in the group, redirect to access_denied page
+       
         messages.error(request, "You do not have permission to access this page.")
         logger.info(f"User '{request.user.username}' Try to access to Logs Page  .")
         return access_denied(request)
-    logs = parse_logs()  # Get filtered logs
+    logs = parse_logs() 
     logger.info(f"User '{request.user.username}'Accessed to Logs Page  .")
     return render(request, 'admin_logs.html', {'logs': logs})
 
@@ -182,13 +260,11 @@ def RegisterView(request):
             user_data_has_error = True
             messages.error(request, "Password must be at least 5 characters")
 
-        # Check if passwords match
         if password != confirm_password:
             user_data_has_error = True
             messages.error(request, "Passwords do not match")
             logger.warning(f"Registration failed: Passwords do not match for username '{username}'.")
 
-        # Validate password strength
         try:
             validate_password(password)
         except ValidationError as e:
@@ -218,11 +294,10 @@ def LoginView(request):
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
-        recaptcha_response = request.POST.get('g-recaptcha-response')  # Get the reCAPTCHA response
+        recaptcha_response = request.POST.get('g-recaptcha-response')  
 
-        # Verify reCAPTCHA with Google
         recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'
-        recaptcha_secret_key = settings.RECAPTCHA_PRIVATE_KEY  # Add the secret key from settings.py
+        recaptcha_secret_key = settings.RECAPTCHA_PRIVATE_KEY 
 
         data = {
             'secret': recaptcha_secret_key,
@@ -231,9 +306,9 @@ def LoginView(request):
         recaptcha_result = requests.post(recaptcha_url, data=data)
         result_json = recaptcha_result.json()
 
-        # Check if reCAPTCHA was successfully verified
+        
         if result_json.get('success'):
-            # Authenticate user if reCAPTCHA is valid
+            
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
@@ -275,10 +350,10 @@ def ForgotPassword(request):
             logger.info(f"User '{request.user.username}' try to reset his password.")
 
             email_message = EmailMessage(
-                'Reset your password', # email subject
+                'Reset your password', 
                 email_body,
-                settings.EMAIL_HOST_USER, # email sender
-                [email] # email  receiver 
+                settings.EMAIL_HOST_USER, 
+                [email] 
             )
 
             email_message.fail_silently = True
@@ -300,7 +375,6 @@ def PasswordResetSent(request, reset_id):
     if PasswordReset.objects.filter(reset_id=reset_id).exists():
         return render(request, 'password_reset_sent.html')
     else:
-        # redirect to forgot password page if code does not exist
         logger.warning("Invalid reset_id. Redirecting to forgot-password.")
         messages.error(request, 'Invalid reset id')
         return redirect('forgot-password')
@@ -345,14 +419,12 @@ def ResetPassword(request, reset_id):
                 messages.success(request, 'Password reset. Proceed to login')
                 return redirect('login')
             else:
-                # redirect back to password reset page and display errors
                 logger.warning("Password reset failed due to form errors.")
                 return redirect('reset-password', reset_id=reset_id)
 
     
     except PasswordReset.DoesNotExist:
         
-        # redirect to forgot password page if code does not exist
         logger.error(f"PasswordReset with reset_id: {reset_id} does not exist.")
         messages.error(request, 'Invalid reset id')
         return redirect('forgot-password')
@@ -368,19 +440,19 @@ def product_create_view(request):
         form = ProductForm(request.POST)
         if form.is_valid():
             form.save()
-            product = form.save(commit=False)  # On ne sauvegarde pas encore
-            product.created_by = request.user  # Assigne l'utilisateur connecté
+            product = form.save(commit=False)  
+            product.created_by = request.user  
             product.save()
             logger.info("Product created successfully.")
     
-            return redirect('product_list')  # Redirect to the product list view
+            return redirect('product_list')  
         else:
             logger.warning("Invalid form data for product creation.")
     else:
         form = ProductForm()
     return render(request, 'invapp/product_form.html', {
         'form': form,
-        'username': request.user.username  # Passer le nom de l'utilisateur au template
+        'username': request.user.username  
     })
 # Read View
 def product_list_view(request):
@@ -391,7 +463,6 @@ def product_list_view(request):
     else:
         products = Product.objects.filter(created_by=request.user)
 
-    # Pass the permission and products to the template
     return render(request, 'invapp/product_list.html', {
         'products': products,
         'can_view_all_products': can_view_all_products
@@ -414,7 +485,6 @@ def product_update_view(request, product_id):
             logger.warning(f"Invalid form data for product update, product_id: {product_id}")
 
 
-    # Decrypt bank_number if it exists for display in the form
     if product.bank_number:
         decrypted_bank_number = product.display_encrypted_bank_number()
         form.fields['bank_number'].initial = decrypted_bank_number
